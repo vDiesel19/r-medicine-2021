@@ -18,7 +18,6 @@ const FooterLinks = () => {
 				</ul>
 			</div>
 			<div className="footer-links__category">
-				<p className="footer-links__category--header">Contact Us</p>
 				<ul className="footer-links__list">
 					<li>
 						<a href="mailto:r-medicine-conf@r-consortium.org">Contact Us</a>

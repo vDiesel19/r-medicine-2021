@@ -3,6 +3,7 @@
 
 .footer-links {
     display: flex;
+    align-items: baseline;
     @include reader {
         flex-direction: column;
         text-align: center;
