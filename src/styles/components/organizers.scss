@@ -1,0 +1,58 @@
+@import '../includes/_variables.scss';
+@import '../includes/_mixins.scss';
+
+.organizers {
+    padding: 50px 0;
+    @include reader {
+        padding: 40px 0;
+    }
+    &__container {
+        width: 95%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        @include reader {
+            flex-direction: column;
+            width: calc(100% - 50px);
+        }
+    }
+    &__content {
+        width: 50%;
+        text-align: center;
+        @include reader {
+            width: 100%;
+        }
+        &:first-child {
+            border-right: 1px solid #04848f;
+            @include reader {
+                border-right: none;
+            }
+        }
+        h3, p {
+            font-family: sans-serif;
+            margin: 0;
+        }
+        h3 {
+            color: #04848f;
+            font-size: 28px;
+            @include reader {
+                font-size: 26px;
+            }
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #4a4a4a;
+        }
+        .organizers__name {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .organizers__company {
+            font-size: 16px;
+        }
+    }
+    &__name-container {
+        margin: 20px 0;
+    }
+}

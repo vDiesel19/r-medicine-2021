@@ -1,0 +1,77 @@
+@import '../includes/_variables.scss';
+@import '../includes/_mixins.scss';
+
+.hero-banner {
+    position: relative;
+    &__img {
+        width: 100%;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    &__wrapper {
+        width: 95%;
+        max-width: 1200px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        @include reader {
+            width: calc(100% - 50px);
+            top: unset;
+            transform: translateY(0);
+            bottom: 20%;
+        }
+        @include mobile {
+            bottom: 11%;
+        }
+    }
+    &__content {
+        width: 58%;
+        @include reader {
+            width: 100%;
+        }
+    }
+    &__header, 
+    &__subheader, 
+    &__text {
+        margin: 0 auto;
+        color: #fff;
+        font-family: sans-serif;
+    }
+    &__header {
+        font-size: 56px;
+        @include tablet {
+            font-size: 40px;
+        }
+        @include mobile {
+            font-size: 32px;
+        }
+    }
+    &__subheader {
+        font-size: 42px;
+        margin: 10px auto;
+        @include tablet {
+            font-size: 32px;
+        }
+        @include mobile {
+            font-size: 26px;
+        }
+    }
+    &__text {
+        font-size: 28px;
+        line-height: 1.4;
+        width: 80%;
+        @include tablet {
+            font-size: 20px;
+        }
+        @include mobile {
+            width: 100%;
+            font-size: 18px;
+        }
+    }
+}

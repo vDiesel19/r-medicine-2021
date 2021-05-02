@@ -1,0 +1,23 @@
+.header {
+  &__wrapper {
+		background-color: #04848f;
+		@media screen and (max-width: 767px) {
+			padding: 14px 0;
+		}
+	}
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 95%;
+		max-width: 1200px;
+		margin: 0 auto;
+		@media screen and (max-width: 767px) {
+			justify-content: center;
+		}
+	}
+	&__border {
+		height: 4px;
+		background: linear-gradient(to left, #04626C, #4C112A);
+	}
+}
