@@ -17,8 +17,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "GatsbyJS",
-        short_name: "GatsbyJS",
+        name: "R/Medicine 2021",
+        short_name: "R/Medicine 2021",
         start_url: "/",
         background_color: "#ffffff",
         theme_color: "#ffffff",
