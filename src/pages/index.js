@@ -15,7 +15,7 @@ export default function Home() {
     last_name: '',
     email: '',
     successMessage: false,
-	});
+  });
 
   return (
     <AppContext.Provider value={stateHook}>
