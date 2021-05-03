@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby';
 import desktopBanner from '../assets/homepage_hero_desktop_2.jpg';
 import tabletBanner from '../assets/homepage_hero_tablet.jpg';
 
@@ -7,8 +7,8 @@ const HeroBanner = () => {
 	return (
 		<StaticQuery
 		  	query={graphql`
-				query MyQuery {
-					markdownRemark(frontmatter: {}) {
+				query HeroBannerQuery {
+					markdownRemark(frontmatter: {id: {eq: "hero-banner"}}) {
 						frontmatter {
 							heroheader_line_1
 							heroheader_line_2
