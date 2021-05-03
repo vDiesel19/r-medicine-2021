@@ -14,6 +14,19 @@ module.exports = {
         name: `markdown-pages`
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "GatsbyJS",
+        short_name: "GatsbyJS",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#ffffff",
+        display: "standalone",
+        icon: "src/assets/favicon-32x32.png",
+        crossOrigin: `use-credentials`,
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
   ],
