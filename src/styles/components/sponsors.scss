@@ -41,6 +41,12 @@
         }
         img {
             height: 100%;
+            transform: scale(1);
+            transition: transform .2s ease-in;
+            &:hover {
+                transform: scale(1.1);
+                transition: transform .2s ease-out;
+            }
         }
     }
     &__content {

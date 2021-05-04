@@ -21,13 +21,19 @@ const SponsorsTop = () => {
 				<div className="sponsors">
 					<div className="sponsors__logos-container">
 						<div className="sponsors__logo">
-							<img src={chopLogo} alt="Children's Hospital of Philadelphia" />
+							<a href="https://www.chop.edu/" target="_blank" rel="noreferrer">
+								<img src={chopLogo} alt="Children's Hospital of Philadelphia" />
+							</a>
 						</div>
 						<div className="sponsors__logo">
-							<img src={yaleHealthLogo} alt="Yale School of Public Health" />
+							<a href="https://publichealth.yale.edu/" target="_blank" rel="noreferrer">
+								<img src={yaleHealthLogo} alt="Yale School of Public Health" />
+							</a>
 						</div>
 						<div className="sponsors__logo">
-							<img src={RConsortiumLogo} alt="R Consortium" />
+							<a href="https://www.r-consortium.org/" target="_blank" rel="noreferrer">
+								<img src={RConsortiumLogo} alt="R Consortium" />
+							</a>
 						</div>
 					</div>
 					<div className="sponsors__content">

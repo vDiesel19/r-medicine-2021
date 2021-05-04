@@ -25,7 +25,7 @@ export default function Home() {
         <SectionHeader header="Brought to You Buy" />
         <SponsorsTop />
         <SectionHeader header="Organizers" />
-        <Organizers />
+        <Organizers titleOne="Organizing Committee" titleTwo="Program Committee" />
         <SectionHeader header="Schedule At-A-Glance" />
         <Schedule />
         <SectionHeader header="Sponsors" />
