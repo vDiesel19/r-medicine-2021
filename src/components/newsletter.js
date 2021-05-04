@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 import AppContext from '../context/appContext';
 
 function encode(data) {
@@ -40,41 +41,55 @@ const Newsletter = () => {
   }
 	
 	return (
-		<div className="newsletter">
-			<h3 className="newsletter__header">Join our mailing list to hear all the latest about events, news and more</h3>
-      {context.successMessage &&
-        <p className="newsletter__success">Thank you for joining our newsletter!</p>
-      }
-      <form
-        name="newsletter"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        onSubmit={(e) => handleSubmit(e)}
-      >
-        <input type="hidden" name="form-name" value="newsletter" />
-        <div hidden>
-          <label>
-            Don’t fill this out: <input name="bot-field" onChange={(e) => handleChange(e)} />
-          </label>
+    <StaticQuery
+      query={graphql`
+        query NewsletterQuery {
+          markdownRemark(frontmatter: {id: {eq: "newsletter"}}) {
+            frontmatter {
+              header
+              success_message
+            }
+          }
+        }
+      `}
+      render={data => (
+        <div className="newsletter">
+          <h3 className="newsletter__header">{data.markdownRemark.frontmatter.header}</h3>
+          {context.successMessage &&
+            <p className="newsletter__success">{data.markdownRemark.frontmatter.success_message}</p>
+          }
+          <form
+            name="newsletter"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={(e) => handleSubmit(e)}
+          >
+            <input type="hidden" name="form-name" value="newsletter" />
+            <div hidden>
+              <label>
+                Don’t fill this out: <input name="bot-field" onChange={(e) => handleChange(e)} />
+              </label>
+            </div>
+            <div className="newsletter__wrapper">
+              <div className="newsletter__field-group">
+                <input type="text" name="first_name" placeholder="First Name" onChange={(e) => handleChange(e)} required />
+              </div>
+              <div className="newsletter__field-group">
+                <input type="text" name="last_name" placeholder="Last Name" onChange={(e) => handleChange(e)} required />
+              </div>
+              <div className="newsletter__field-group">
+                <input type="email" name="email" placeholder="Email" onChange={(e) => handleChange(e)} required />
+              </div>
+              <div className="newsletter__field-group">
+                <button className="newsletter__submit" type="submit">Subscribe</button>
+              </div>
+            </div>
+          </form>
         </div>
-        <div className="newsletter__wrapper">
-          <div className="newsletter__field-group">
-            <input type="text" name="first_name" placeholder="First Name" onChange={(e) => handleChange(e)} required />
-          </div>
-          <div className="newsletter__field-group">
-            <input type="text" name="last_name" placeholder="Last Name" onChange={(e) => handleChange(e)} required />
-          </div>
-          <div className="newsletter__field-group">
-            <input type="email" name="email" placeholder="Email" onChange={(e) => handleChange(e)} required />
-          </div>
-          <div className="newsletter__field-group">
-            <button className="newsletter__submit" type="submit">Subscribe</button>
-          </div>
-        </div>
-      </form>
-		</div>
-	);
+      )}
+    />
+	)
 };
 
 export default Newsletter;
