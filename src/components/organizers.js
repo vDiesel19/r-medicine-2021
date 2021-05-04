@@ -12,7 +12,7 @@ const Organizers = () => {
 					</div>
 					<div className="organizers__name-container">
 						<p className="organizers__name">Michael Kane</p>
-						<p className="organizers__company">Children's Hospital of Philadelphia</p>
+						<p className="organizers__company">Yale University School of Public Health</p>
 					</div>
 					<div className="organizers__name-container">
 						<p className="organizers__name">Mara Alexeev</p>
@@ -39,11 +39,15 @@ const Organizers = () => {
 					</div>
 					<div className="organizers__name-container">
 						<p className="organizers__name">Steve Schwager</p>
-						<p className="organizers__company">Medidata</p>
+						<p className="organizers__company">Cornell</p>
 					</div>
 					<div className="organizers__name-container">
 						<p className="organizers__name">Romi Admanit</p>
-						<p className="organizers__company">Procogia</p>
+						<p className="organizers__company">Biogen</p>
+					</div>
+					<div className="organizers__name-container">
+						<p className="organizers__name">Denise Esserman</p>
+						<p className="organizers__company">Yale University School of Public Health</p>
 					</div>
 				</div>
 			</div>

@@ -45,5 +45,11 @@
                 width: 85%;
             }
         }
+        a {
+            color: #fff;
+            &:hover {
+                color: #5ABCC4;
+            }
+        }
     }
 }
