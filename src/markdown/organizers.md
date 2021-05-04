@@ -22,5 +22,5 @@ program_committee:
     - name: Romi Admanit 
       company: Biogen
     - name: Denise Esserman
-      company: Yale School of Public Health
+      company: Yale University School of Public Health
 ---
