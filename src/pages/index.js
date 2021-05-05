@@ -22,14 +22,12 @@ export default function Home() {
       <div className="app">
         <Header />
         <HeroBanner />
-        <SectionHeader header="Brought to You Buy" />
+        <SectionHeader header="Brought to You By" />
         <SponsorsTop />
         <SectionHeader header="Organizers" />
         <Organizers titleOne="Organizing Committee" titleTwo="Program Committee" />
         <SectionHeader header="Schedule At-A-Glance" />
         <Schedule />
-        <SectionHeader header="Sponsors" />
-        <SponsorsBottom />
         <Footer />
       </div>
     </AppContext.Provider>

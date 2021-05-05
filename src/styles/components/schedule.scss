@@ -6,6 +6,22 @@
     @include reader {
         padding: 40px 0;
     }
+    &__subheader {
+        color: #474747;
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+        width: 65%;
+        margin: 0 auto 50px;
+        text-align: center;
+        @include tablet {
+            width: 75%;
+        }
+        @include reader {
+            width: calc(100% - 50px);
+            margin: 0 auto 40px;
+        }
+    }
     &__container {
         width: 95%;
         max-width: 1200px;
@@ -72,7 +88,7 @@
         }
         img {
             transform: rotate(0);
-            width: 30px;
+            width: 25px;
             transition: transform .2s ease-out;
         }
     }
