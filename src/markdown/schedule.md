@@ -1,5 +1,6 @@
 ---
 id: "schedule-glance"
+subheader: Sessions will run from approximately 11 AM EDT - 6 PM EDT.
 schedules:
     - day_week: Tuesday
       date: 24th

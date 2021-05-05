@@ -1,8 +1,10 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby'
 import chopLogo from '../assets/chop_web.svg';
-import yaleHealthLogo from '../assets/Yale_SOPH_web.svg';
+import procogiaLogo from '../assets/procogia.svg';
 import RConsortiumLogo from '../assets/RConsortium_Horizontal_Pantone.svg';
+import RStudioLogo from '../assets/RStudio-Logo-flat.svg';
+import yaleHealthLogo from '../assets/Yale_SOPH_web.svg';
 
 const SponsorsTop = () => {
 	return (
@@ -33,6 +35,18 @@ const SponsorsTop = () => {
 						<div className="sponsors__logo">
 							<a href="https://www.r-consortium.org/" target="_blank" rel="noreferrer">
 								<img src={RConsortiumLogo} alt="R Consortium" />
+							</a>
+						</div>
+					</div>
+					<div className="sponsors__logos-container sponsors__logos-container-last">
+						<div className="sponsors__logo">
+							<a href="https://www.rstudio.com/" target="_blank" rel="noreferrer">
+								<img src={RStudioLogo} alt="R Studio" />
+							</a>
+						</div>
+						<div className="sponsors__logo">
+							<a href="https://www.procogia.com/" target="_blank" rel="noreferrer">
+								<img src={procogiaLogo} alt="Procogia" />
 							</a>
 						</div>
 					</div>

@@ -15,14 +15,17 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        &.sponsors__logos-container-last {
-            margin: 0 auto;
-        }
         @include tablet {
             width: calc(100% - 50px);
         }
         @include reader {
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0 auto 30px;
+            align-items: flex-start;
+        }
+        &.sponsors__logos-container-last {
+            margin: 0 auto;
         }
     }
     &__logo {
@@ -36,7 +39,7 @@
             height: 55px;
         }
         @include reader {
-            height: 60px;
+            height: 35px;
             margin: 0 auto 30px;
         }
         img {
@@ -55,7 +58,7 @@
         margin: 50px auto;
         text-align: center;
         @include reader {
-            margin: 40px auto;
+            margin: 0 auto;
             width: calc(100% - 50px);
         }
         p {
