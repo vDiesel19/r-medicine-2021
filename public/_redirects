@@ -2,6 +2,6 @@
 # source path exists
 
 # Alternate domain redirects
-https://r-medicine.org/             https://r-medicine-2021.netlify.app/    301!
-https://r-medicine.com/             https://r-medicine-2021.netlify.app/    301!
+https://r-medicine.org/*            https://r-medicine-2021.netlify.app/    301!
+https://r-medicine.com/*            https://r-medicine-2021.netlify.app/    301!
 
