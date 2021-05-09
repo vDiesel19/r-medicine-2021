@@ -1,7 +1,0 @@
-# Note that all redirects should have "301!" at the end to force the redirect regardless of whether or not the
-# source path exists
-
-# Alternate domain redirects
-https://r-medicine.org/         https://r-medicine-2021.netlify.app/    301!
-https://r-medicine.com/         https://r-medicine-2021.netlify.app/    301!
-
