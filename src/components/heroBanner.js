@@ -26,6 +26,7 @@ const HeroBanner = () => {
 							<h1 className="hero-banner__header">{data.markdownRemark.frontmatter.heroheader_line_1}<br /><span>{data.markdownRemark.frontmatter.heroheader_line_2}</span></h1>
 							<p className="hero-banner__subheader">{data.markdownRemark.frontmatter.herosubheader}</p>
 							<p className="hero-banner__text">{data.markdownRemark.frontmatter.herotext}</p>
+							<p>test content</p>
 						</div>
 					</div>
 					<div className="hero-banner__img">

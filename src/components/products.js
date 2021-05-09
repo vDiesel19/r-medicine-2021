@@ -28,9 +28,11 @@ const inventory = [
 	}
 ];
 
+/*
 const Product = (product) => {
 	const [quantity, setQuantity] = useState();
 };
+*/
 
 const Products = () => {
 	const format = (amount, currency) => new Intl.NumberFormat('en-US', { 
@@ -40,18 +42,23 @@ const Products = () => {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+		const form = new FormData(e.target);
+		const data = {
+			sku: form.get('sku'), 
+			quantity: Number(form.get('quantity')),
+		};
+
 
 		// TODO send to serverless function
-		const response = await fetch('/.netlify/functions/create-checkout.js', {
+		const response = await fetch('/.netlify/functions/create-checkout', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
 			}, 
-			body: JSON.stringify({
-				sku: product.sku,
+			body: JSON.stringify(data),
+		}).then(res => res.json());
 
-			})
-		});
+		console.log(`handleSubmit: ${JSON.stringify(response)}`);
 	};
 
 	return (
