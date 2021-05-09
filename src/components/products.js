@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import rMedicineLogo from '../assets/r_medicine_logo.png';
+import { loadStripe } from "@stripe/stripe-js";
 
 const inventory = [
 	{
@@ -28,11 +29,8 @@ const inventory = [
 	}
 ];
 
-/*
-const Product = (product) => {
-	const [quantity, setQuantity] = useState();
-};
-*/
+// const STRIPE_PUBLISHABLE_KEY = 'pk_test_51IpG4cJ07D88KyOsxixF1RuvQEn7Rpm3e5rqc1ybzfdHjcY0IIrwA4fY0w2oEGlx0CYziphtwqJfPA2DffAO6IpY00vVZnFQ6q';
+
 
 const Products = () => {
 	const format = (amount, currency) => new Intl.NumberFormat('en-US', { 
@@ -59,6 +57,11 @@ const Products = () => {
 		}).then(res => res.json());
 
 		console.log(`handleSubmit: ${JSON.stringify(response)}`);
+		// TODO get the session ID and redirect to checkout
+		const stripe = await loadStripe(process.env.STRIPE_PUBLISHABLE_KEY);
+		const { error } = await stripe.redirectToCheckout({
+			sessionId: response.sessionId,
+		});
 	};
 
 	return (

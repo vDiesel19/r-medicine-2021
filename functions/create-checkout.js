@@ -1,4 +1,4 @@
-const stripe = require('stripe')(process.env.STRIPE_PUBLIC_TEST_KEY);
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const inventory = require('./data/products.json');
 
 exports.handler = async ({ body }) => {
@@ -8,18 +8,22 @@ exports.handler = async ({ body }) => {
 
 	const session = await stripe.checkout.sessions.create({
 		payment_method_types: ['card'],
-		line_items: [{
-			name: product.name,
-			description: product.description,
-			images: [product.image],
-			amount: product.amount,
-			currency: product.currency,
-			quantity: validatedQty,
-		}]
+		billing_address_collection: 'auto',
+		line_items: [
+			{
+				name: product.name,
+				description: product.description,
+				amount: product.amount,
+				currency: product.currency,
+				quantity: validatedQty,
+			}
+		],
+		success_url: 'https://r-medicine.com/',
+		cancel_url: 'http://localhost:8888/registration',
 	});
 
 	return {
 		statusCode: 200,
-		body: JSON.stringify({ sku, quantity }),
+		body: JSON.stringify({ sessionId: session.id }),
 	}
 }
