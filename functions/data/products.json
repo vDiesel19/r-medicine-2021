@@ -1,0 +1,26 @@
+[
+  {
+		"sku": "RMT1",
+		"name": "R Medicine 2021 Tier 1",
+		"description": "R Medicine 2021 Tier 1 Registration for Institutions",
+		"image": "",
+		"amount": 10000,
+		"currency": "USD"
+	},
+	{
+		"sku": "RMT2",
+		"name": "R Medicine 2021 Tier 2",
+		"description": "R Medicine 2021 Tier 2 Registration for Professionals",
+		"image": "",
+		"amount": 5000,
+		"currency": "USD"
+	},
+	{
+		"sku": "RMT3",
+		"name": "R Medicine 2021 Tier 3",
+		"description": "R Medicine 2021 Tier 3 Registration for Students",
+		"image": "",
+		"amount": 1000,
+		"currency": "USD"
+  }
+]

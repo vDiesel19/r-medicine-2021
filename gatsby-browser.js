@@ -17,3 +17,4 @@ import './src/styles/components/section-header.scss';
 import './src/styles/components/sponsors.scss';
 import './src/styles/components/organizers.scss';
 import './src/styles/components/schedule.scss';
+import './src/styles/components/products.scss';
