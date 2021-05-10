@@ -29,8 +29,8 @@ const inventory = [
 	}
 ];
 
-// const STRIPE_PUBLISHABLE_KEY = 'pk_test_51IpG4cJ07D88KyOsxixF1RuvQEn7Rpm3e5rqc1ybzfdHjcY0IIrwA4fY0w2oEGlx0CYziphtwqJfPA2DffAO6IpY00vVZnFQ6q';
-
+const STRIPE_PUB_KEY = 'pk_test_51IpG4cJ07D88KyOsxixF1RuvQEn7Rpm3e5rqc1ybzfdHjcY0IIrwA4fY0w2oEGlx0CYziphtwqJfPA2DffAO6IpY00vVZnFQ6q';
+const stripePromise = loadStripe(STRIPE_PUB_KEY);
 
 const Products = () => {
 	const format = (amount, currency) => new Intl.NumberFormat('en-US', { 
@@ -57,11 +57,16 @@ const Products = () => {
 		}).then(res => res.json());
 
 		console.log(`handleSubmit: ${JSON.stringify(response)}`);
+
 		// TODO get the session ID and redirect to checkout
-		const stripe = await loadStripe(process.env.STRIPE_PUBLISHABLE_KEY);
+		const stripe = await stripePromise;
 		const { error } = await stripe.redirectToCheckout({
 			sessionId: response.sessionId,
 		});
+
+		if (error) {
+			console.error(error);
+		}
 	};
 
 	return (

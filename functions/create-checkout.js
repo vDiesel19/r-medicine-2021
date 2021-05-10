@@ -18,7 +18,7 @@ exports.handler = async ({ body }) => {
 				quantity: validatedQty,
 			}
 		],
-		success_url: 'https://r-medicine.com/',
+		success_url: 'http://localhost:8888/registration',
 		cancel_url: 'http://localhost:8888/registration',
 	});
 
