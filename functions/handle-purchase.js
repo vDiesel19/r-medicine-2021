@@ -1,5 +1,5 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
-const endpointSecret = 'whsec_XjQvLgtl96GsnOVcNXMkzFCxRRj8b8KC';
+const endpointSecret = process.env.WEBHOOK_SECRET;
 
 exports.handler = async ({ headers, body }) => {
     const sig = headers['stripe-signature'];
