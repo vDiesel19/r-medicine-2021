@@ -8,7 +8,15 @@ const CodeOfConduct = ({ data, }) => {
 		<div>
 			<Header />
 			<div className="code-conduct">
-				<h1>{data.markdown.frontmatter.id}</h1>
+				<h1>{data.markdownRemark.frontmatter.id}</h1>
+				{data.markdownRemark.frontmatter.sections.map(section => {
+					return (
+						<div className="code-conduct__content" key={section.header}>
+							<h2 className="code-conduct__header">{section.header}</h2>
+							<div className="code-conduct__text">{section.text}</div>
+						</div>
+					)
+				})}
 			</div>
 			<Footer />
 		</div>
@@ -22,6 +30,10 @@ export const pageQuery = graphql`
 		markdownRemark(frontmatter: {id: {eq: "code-of-conduct"}}) {
 			frontmatter {
 				id
+				sections {
+					header
+					text
+				}
 			}
 		}
 	}
