@@ -1,0 +1,9 @@
+.abstract {
+    background-color: lightblue;
+    &__form-wrapper {
+        width: 95%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: wheat;
+    }
+}

@@ -18,3 +18,6 @@ import './src/styles/components/sponsors.scss';
 import './src/styles/components/organizers.scss';
 import './src/styles/components/schedule.scss';
 import './src/styles/components/products.scss';
+import './src/styles/components/abstract-form.scss';
+import './src/styles/components/cc-modal.scss';
+import './src/styles/pages/abstract.scss';

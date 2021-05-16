@@ -1,0 +1,20 @@
+.cc-modal {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .25);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	transform: scale(0);
+	z-index: -1;
+	opacity: 0;
+	transition: all .3s ease-in;
+	overflow-y: scroll;
+	&.show-modal {
+		opacity: 1;
+		z-index: 50;
+		transform: scale(1);
+		transition: all .3s ease-out;
+	}
+}

@@ -6,6 +6,7 @@ const AppContext = createContext([
     last_name: '',
     email: '',
     successMessage: false,
+    showModal: false,
   }
 ]);
 

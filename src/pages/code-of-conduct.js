@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import parse from 'html-react-parser';
 
 const CodeOfConduct = ({ data, }) => {
 	return (
@@ -13,7 +14,7 @@ const CodeOfConduct = ({ data, }) => {
 					return (
 						<div className="code-conduct__content" key={section.header}>
 							<h2 className="code-conduct__header">{section.header}</h2>
-							<div className="code-conduct__text">{section.text}</div>
+							<div className="code-conduct__text">{parse(section.text)}</div>
 						</div>
 					)
 				})}
