@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { navigate } from 'gatsby';
-import AppContext from '../context/appContext';
 
 function encode(data) {
   return Object.keys(data)
@@ -10,22 +9,6 @@ function encode(data) {
 
 const AbstractForm = () => {
 	const [state, setState] = useState({});
-	const [context, setContext] = useContext(AppContext);
-
-	const showModal = (e) => {
-		e.preventDefault();
-		setContext(Object.assign({}, context, { 
-      showModal: true
-    }));
-	}
-
-	useEffect(() => {
-    if (context.showModal) {
-			setContext(Object.assign({}, context, { 
-				showModal: true
-			}));
-		}	
-  }, [context.showModal]);
 
   const handleChange = (e) => {
 		setState({ 
@@ -93,41 +76,41 @@ const AbstractForm = () => {
 			<div className="abstract__form-section">
 				<h2 className="abstract__form-header">Primary Speaker Information</h2>
 				<div className="abstract__field-group">
-					<label htmlFor="name">Name: 
+					<label htmlFor="name">Name<span>*</span> 
 						<br />
-						<input type="text" name="name" placeholder="" onChange={(e) => handleChange(e)} required />
+						<input type="text" name="name" id="name" onChange={(e) => handleChange(e)} required />
 					</label>
-					<label htmlFor="email">Email: 
+					<label htmlFor="email">Email<span>*</span> 
 						<br />
-						<input type="text" name="email" placeholder="" onChange={(e) => handleChange(e)} required />
+						<input type="text" name="email" id="email" onChange={(e) => handleChange(e)} required />
 					</label>
 				</div>
 				<div className="abstract__field-group">
-					<label htmlFor="organization">Organization: 
+					<label htmlFor="organization">Organization<span>*</span>  
 						<br />
-						<input type="text" name="organization" placeholder="" onChange={(e) => handleChange(e)} required />
+						<input type="text" name="organization" id="organization" onChange={(e) => handleChange(e)} required />
 					</label>
-					<label htmlFor="job_title">Job Title: 
+					<label htmlFor="job_title">Job Title<span>*</span>  
 						<br />
-						<input type="text" name="job_title" placeholder="" onChange={(e) => handleChange(e)} required />
+						<input type="text" name="job_title" id="job_title" onChange={(e) => handleChange(e)} required />
 					</label>
 				</div>
 				<div className="abstract__field-group">
 					<label htmlFor="bio">Biography: 
 						<br />
-						<textarea name="bio" id="bio" placeholder="" onChange={(e) => handleChange(e)}></textarea>
+						<textarea name="bio" id="bio" onChange={(e) => handleChange(e)}></textarea>
 					</label>
 				</div>
 				<div className="abstract__field-group">
 					<label htmlFor="twitter">Twitter Handle: 
 						<br />
-						<input type="text" name="twitter" placeholder="" onChange={(e) => handleChange(e)} />
+						<input type="text" name="twitter" id="twitter" onChange={(e) => handleChange(e)} />
 					</label>
 				</div>
 				<div className="abstract__field-group">
 					<label htmlFor="headshot">Headshot: [jpeg, jpg, or png]
 						<br />
-						<input type="file" name="headshot" onChange={(e) => handleAttachment(e)} />
+						<input type="file" name="headshot" id="headshot" onChange={(e) => handleAttachment(e)} />
 					</label>
 				</div>
 				<p className="abstract__form-subheader">R/Medicine is committed to a diverse and inclusive community. The following questions (which are optional) are asked in an effort to track our progress in increasing diversity at events, and will remain confidential.</p>
@@ -162,31 +145,32 @@ const AbstractForm = () => {
 				<h2 className="abstract__form-header">Additional Speakers</h2>
 				<fieldset>
 					<legend>Additional Speaker 1</legend>
-					<label htmlFor="name">Name: 
+					<label htmlFor="speaker_1_name">Name: 
 						<br />
-						<input type="text" name="name" placeholder="" onChange={(e) => handleChange(e)} />
+						<input type="text" name="speaker_1_name" id="speaker_1_name" onChange={(e) => handleChange(e)} />
 					</label>
-					<label htmlFor="email">Email: 
+					<label htmlFor="speaker_1_email">Email: 
 						<br />
-						<input type="text" name="email" placeholder="" onChange={(e) => handleChange(e)} />
+						<input type="text" name="speaker_1_email" id="speaker_1_email" onChange={(e) => handleChange(e)} />
 					</label>
 				</fieldset>
 				<fieldset>
 					<legend>Additional Speaker 2</legend>
-					<label htmlFor="name">Name: 
+					<label htmlFor="speaker_2_name">Name: 
 						<br />
-						<input type="text" name="name" placeholder="" onChange={(e) => handleChange(e)} />
+						<input type="text" name="speaker_2_name" id="speaker_2_name" onChange={(e) => handleChange(e)} />
 					</label>
-					<label htmlFor="email">Email: 
+					<label htmlFor="speaker_2_email">Email: 
 						<br />
-						<input type="text" name="email" placeholder="" onChange={(e) => handleChange(e)} />
+						<input type="text" name="speaker_2_email" id="speaker_2_email" onChange={(e) => handleChange(e)} 
+						/>
 					</label>
 				</fieldset>
 			</div>
 			<div className="abstract__form-section">
 				<h2 className="abstract__form-header">Submission Details</h2>
 				<fieldset>
-					<legend>Type of Submission</legend>
+					<legend>Type of Submission<span>*</span></legend>
 					<label htmlFor="lightning">
 						<input type="radio" id="lightning" name="submission_type" value="lightning" onClick={(e) => handleRadio(e)} required />
 						Lightning talk (10 minutes)
@@ -202,22 +186,22 @@ const AbstractForm = () => {
 				</fieldset>
 				<p className="abstract__form-subheader">If your talk is selected, the Abstract Title you choose will be the Title shown in the conference schedule, often what attendees use as a starting point to determine if they will be interested in the talk. Choose your title carefully - make sure that it accurately describes what your talk will cover.</p>
 				<div className="abstract__field-group">
-					<label htmlFor="abstract_title">Abstract Title: 
+					<label htmlFor="abstract_title">Abstract Title<span>*</span> 
 						<br />
-						<input type="text" name="abstract_title" placeholder="" onChange={(e) => handleChange(e)} required />
+						<input type="text" name="abstract_title" onChange={(e) => handleChange(e)} required />
 					</label>
 				</div>
 				<p className="abstract__form-subheader">Please write 2-3 sentences to describe the intended audience of the talk and how your audience (and the R/Medicine community) will benefit from your presentation.</p>
 				<div className="abstract__field-group">
-					<label htmlFor="abstract">Abstract: 
+					<label htmlFor="abstract">Abstract<span>*</span>  
 						<br />
-						<textarea name="abstract" id="abstract" placeholder="" maxLength="250" onChange={(e) => handleChange(e)} required ></textarea>
+						<textarea name="abstract" id="abstract" maxLength="250" onChange={(e) => handleChange(e)} required ></textarea>
 					</label>
 				</div>
 				<div className="abstract__field-group">
-					<label htmlFor="audience">Intended Audience: 
+					<label htmlFor="audience">Intended Audience<span>*</span>  
 						<br />
-						<input type="text" name="audience" id="audience" placeholder="" onChange={(e) => handleChange(e)} required />
+						<input type="text" name="audience" id="audience" onChange={(e) => handleChange(e)} required />
 					</label>
 				</div>
 			</div>
@@ -242,7 +226,7 @@ const AbstractForm = () => {
 			</div>
 			<div className="abstract__form-section">
 				<h2 className="abstract__form-header">Code of Conduct</h2>
-				<p className="abstract__form-subheader">Please read the <a href="#" onClick={(e) => showModal(e)}>R/Medicine Code of Conduct.</a></p>
+				<p className="abstract__form-subheader">Please read the <a href="/code-of-conduct">R/Medicine Code of Conduct.</a></p>
 				<div className="abstract__field-group">
 					<label htmlFor="code_conduct">
 						<input type="checkbox" id="code_conduct" name="code_conduct" onClick={() => enableSubmit()} />

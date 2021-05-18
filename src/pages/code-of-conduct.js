@@ -9,15 +9,17 @@ const CodeOfConduct = ({ data, }) => {
 		<div>
 			<Header />
 			<div className="code-conduct">
-				<h1>{data.markdownRemark.frontmatter.id}</h1>
-				{data.markdownRemark.frontmatter.sections.map(section => {
-					return (
-						<div className="code-conduct__content" key={section.header}>
-							<h2 className="code-conduct__header">{section.header}</h2>
-							<div className="code-conduct__text">{parse(section.text)}</div>
-						</div>
-					)
-				})}
+				<h1 className="code-conduct__top-header">{data.markdownRemark.frontmatter.topHeader}</h1>
+				<div className="code-conduct__container">
+					{data.markdownRemark.frontmatter.sections.map(section => {
+						return (
+							<div className="code-conduct__content" key={section.header}>
+								<h2 className="code-conduct__header">{section.header}</h2>
+								<div className="code-conduct__text">{parse(section.text)}</div>
+							</div>
+						)
+					})}
+				</div>
 			</div>
 			<Footer />
 		</div>
@@ -30,7 +32,7 @@ export const pageQuery = graphql`
 	query CodeConductQuery {
 		markdownRemark(frontmatter: {id: {eq: "code-of-conduct"}}) {
 			frontmatter {
-				id
+				topHeader
 				sections {
 					header
 					text
