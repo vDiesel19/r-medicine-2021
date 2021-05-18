@@ -14,6 +14,18 @@ const NavDrawer = (props) => {
 			<Hamburger />
 			<div className="drawer__content">
 				<ul className="drawer__link-list">
+					<li>
+						<a href="/" target="_blank">Register</a>
+					</li>
+					<li>
+						<Link to="/abstract/">Abstract Submission</Link>
+					</li>
+					<li>
+						<Link className="drawer__link-level-1" to="/about/">About</Link>
+					</li>
+					<li>
+						<Link className="drawer__link-level-1" to="/code-of-conduct/">Code of Conduct</Link>
+					</li>
 					<li className="drawer__dropdown--wrapper">
 						<Link className="drawer__link-level-1" to="/">Past Events</Link>
 						<div className="drawer__dropdown">

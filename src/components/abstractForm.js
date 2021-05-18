@@ -1,5 +1,5 @@
-import React, { useState, useContext, useEffect } from 'react';
-import { navigate } from 'gatsby';
+import React, { useState } from 'react';
+import { navigate, Link } from 'gatsby';
 
 function encode(data) {
   return Object.keys(data)
@@ -96,9 +96,9 @@ const AbstractForm = () => {
 					</label>
 				</div>
 				<div className="abstract__field-group">
-					<label htmlFor="bio">Biography: 
+					<label htmlFor="bio" className="abstract__label-textarea">Biography: 
 						<br />
-						<textarea name="bio" id="bio" onChange={(e) => handleChange(e)}></textarea>
+						<textarea name="bio" id="bio" rows="5" onChange={(e) => handleChange(e)}></textarea>
 					</label>
 				</div>
 				<div className="abstract__field-group">
@@ -108,13 +108,13 @@ const AbstractForm = () => {
 					</label>
 				</div>
 				<div className="abstract__field-group">
-					<label htmlFor="headshot">Headshot: [jpeg, jpg, or png]
+					<label htmlFor="headshot">Headshot: <span className="file-type">(jpeg, jpg, or png accepted)</span>
 						<br />
 						<input type="file" name="headshot" id="headshot" onChange={(e) => handleAttachment(e)} />
 					</label>
 				</div>
 				<p className="abstract__form-subheader">R/Medicine is committed to a diverse and inclusive community. The following questions (which are optional) are asked in an effort to track our progress in increasing diversity at events, and will remain confidential.</p>
-				<fieldset>
+				<fieldset className="fieldset--radio">
 					<legend>What gender does the primary speaker identify with?</legend>
 					<label htmlFor="male">
 						<input type="radio" id="male" name="gender" value="male" onClick={(e) => handleRadio(e)} />
@@ -129,7 +129,7 @@ const AbstractForm = () => {
 						Other
 					</label>
 				</fieldset>
-				<fieldset>
+				<fieldset className="fieldset--radio">
 					<legend>Does the primary speaker identify as a person of color?</legend>
 					<label htmlFor="yes">
 						<input type="radio" id="yes" name="poc" value="yes" onClick={(e) => handleRadio(e)} />
@@ -169,7 +169,7 @@ const AbstractForm = () => {
 			</div>
 			<div className="abstract__form-section">
 				<h2 className="abstract__form-header">Submission Details</h2>
-				<fieldset>
+				<fieldset className="fieldset--radio">
 					<legend>Type of Submission<span>*</span></legend>
 					<label htmlFor="lightning">
 						<input type="radio" id="lightning" name="submission_type" value="lightning" onClick={(e) => handleRadio(e)} required />
@@ -193,9 +193,9 @@ const AbstractForm = () => {
 				</div>
 				<p className="abstract__form-subheader">Please write 2-3 sentences to describe the intended audience of the talk and how your audience (and the R/Medicine community) will benefit from your presentation.</p>
 				<div className="abstract__field-group">
-					<label htmlFor="abstract">Abstract<span>*</span>  
+					<label htmlFor="abstract" className="abstract__label-textarea">Abstract<span>*</span>  
 						<br />
-						<textarea name="abstract" id="abstract" maxLength="250" onChange={(e) => handleChange(e)} required ></textarea>
+						<textarea name="abstract" id="abstract" rows="5" maxLength="250" onChange={(e) => handleChange(e)} required ></textarea>
 					</label>
 				</div>
 				<div className="abstract__field-group">
@@ -209,7 +209,7 @@ const AbstractForm = () => {
 				<h2 className="abstract__form-header">Additional Information</h2>
 				<p className="abstract__form-subheader">The R/Medicine Program Committee reviews many proposals, and having extra resources helps us gauge the speaker's experience and expertise.</p>
 				<p className="abstract__form-subheader">If you have any links to previous talks showcasing you or any of your speakers, please share below. Other resources, like links to published books, LinkedIn profiles, or relevant blog posts, are also appreciated. We welcome applications from new speakers, so don't worry if you don't have previous talk recordings to submit here. Even a YouTube video of yourself speaking for a couple of minutes could help the reviewers.</p>
-				<div className="abstract__field-group">
+				<div className="abstract__field-group field-group--resource">
 					<label htmlFor="resource_1">Resource 1:
 						<br />
 						<input type="text" name="resource_1" id="resource_1" placeholder="" onChange={(e) => handleChange(e)} />
@@ -226,15 +226,15 @@ const AbstractForm = () => {
 			</div>
 			<div className="abstract__form-section">
 				<h2 className="abstract__form-header">Code of Conduct</h2>
-				<p className="abstract__form-subheader">Please read the <a href="/code-of-conduct">R/Medicine Code of Conduct.</a></p>
-				<div className="abstract__field-group">
+				<p className="abstract__form-subheader">Please read the <Link to="/code-of-conduct">R/Medicine Code of Conduct.</Link></p>
+				<div className="abstract__field-group field-group--checkbox">
 					<label htmlFor="code_conduct">
 						<input type="checkbox" id="code_conduct" name="code_conduct" onClick={() => enableSubmit()} />
 						I agree to abide by the Linux Foundation Code of Conduct.
 					</label>
 				</div>
 				<p className="abstract__form-subheader">This event will be online only. We require presenters to help in creating the best experience possible. Please confirm that you have access to a computer with a camera, microphone and high-speed internet for delivering your presentation online.</p>
-				<div className="abstract__field-group">
+				<div className="abstract__field-group field-group--checkbox">
 					<label htmlFor="hardware">
 						<input type="checkbox" id="hardware" name="hardware" onClick={() => enableSubmit()} />
 						I do.

@@ -8,7 +8,7 @@
     }
     h1 {
         width: 95%;
-        max-width: 850px;
+        max-width: 700px;
         margin: 0 auto 10px;
         font-family: sans-serif;
         font-size: 30px;
@@ -21,8 +21,10 @@
     }
     &__form-wrapper {
         width: 95%;
-        max-width: 850px;
+        max-width: 700px;
         margin: 0 auto;
-        background-color: wheat;
+        @include reader {
+            width: calc(100% - 50px);
+        }
     }
 }

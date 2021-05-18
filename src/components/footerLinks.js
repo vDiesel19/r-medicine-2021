@@ -1,8 +1,26 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 const FooterLinks = () => {
 	return (
 		<div className="footer-links">
+			<div className="footer-links__category category-contact">
+				<p className="footer-links__category--header">Attend</p>
+				<ul className="footer-links__list">
+					<li>
+						<a href="/" target="_blank">Register</a>
+					</li>
+					<li>
+						<Link to="/abstract/">Abstract Submission</Link>
+					</li>
+					<li>
+						<Link to="/about/">About</Link>
+					</li>
+					<li>
+						<Link to="/code-of-conduct/">Code of Conduct</Link>
+					</li>
+				</ul>
+			</div>
 			<div className="footer-links__category">
 				<p className="footer-links__category--header">Past Events</p>
 				<ul className="footer-links__list">
@@ -18,6 +36,7 @@ const FooterLinks = () => {
 				</ul>
 			</div>
 			<div className="footer-links__category category-contact">
+				<p className="footer-links__category--header">Support</p>
 				<ul className="footer-links__list">
 					<li>
 						<a href="mailto:r-medicine-conf@r-consortium.org">Contact Us</a>
