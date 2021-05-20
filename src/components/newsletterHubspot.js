@@ -12,39 +12,59 @@ const NewsletterHubspot = () => {
 
   const handleSubmit = (e) => {
 		e.preventDefault()
+		const portalId = '8112310';
+		const formId = '3f8feb15-4a3a-4893-9a63-a219086e993f'
 		const form = new FormData(e.target);
 		const formData = {
 			email: form.get('email'), 
 			firstname: form.get('first_name'),
 			lastname: form.get('last_name'),
 		};
+
     const xhr = new XMLHttpRequest();
-		const url = "https://api.hsforms.com/submissions/v3/integration/submit/8112310/3f8feb15-4a3a-4893-9a63-a219086e993f";
+		const postUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`;
 
 		// Example request JSON:
-		const data = {
-			submittedAt: Date.now(),
-			fields: [
-				{
-					name: "email",
-					value: formData.email,
-				},
-				{
-					name: "firstname",
-					value: formData.firstname,
-				},
-				{
-					name: "lastname",
-					value: formData.lastname,
-				},
-			],
-			context: {
-				pageUri: "thank-you",
-				pageName: "Thank You",
-			},
-		};
-		var final_data = JSON.stringify(data);
-		xhr.open("POST", url);
+		const body = {
+      submittedAt: Date.now(),
+      fields: [
+        {
+          name: 'firstname',
+          value: formData.firstname,
+        },
+        {
+          name: 'lastname',
+          value: formData.lastname,
+        },
+        {
+          name: 'email',
+          value: formData.email,
+        },
+      ],
+    };
+
+		/*
+		fetch(postUrl, {
+      method: 'post',
+      body: JSON.stringify(body),
+      headers: new Headers({
+        'Content-Type': 'application/json',
+        Accept: 'application/json, application/xml, text/plain, text/html, *.*',
+      }),
+    })
+    .then(() => {
+      setContext(Object.assign({}, context, { successMessage: true }));
+      setTimeout(() => {
+        setContext(Object.assign({}, context, { 
+          successMessage: false
+        }));
+      }, 3000);
+    })
+		.catch((error) => alert(error))
+		*/
+
+		var final_data = JSON.stringify(body);
+		xhr.open("POST", postUrl);
 		xhr.setRequestHeader("Content-Type", "application/json");
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState == 4 && xhr.status == 200) {
@@ -70,7 +90,6 @@ const NewsletterHubspot = () => {
 			<form
 				name="newsletter"
 				method="post"
-				action="/thank-you/"
 				onSubmit={(e) => handleSubmit(e)}
 			>
 				<input type="hidden" name="form-name" value="newsletter" />
