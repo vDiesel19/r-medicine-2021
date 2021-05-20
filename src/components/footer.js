@@ -1,5 +1,5 @@
 import React from 'react';
-import Newsletter from './newsletter';
+import NewsletterHubspot from './newsletterHubspot';
 import FooterLinks from './footerLinks';
 import SocialMedia from './socialMedia';
 
@@ -7,7 +7,7 @@ const Footer = (props) => {
 	return (
 		<footer className="footer">
 			<div className="footer__wrapper">
-				<Newsletter />
+				<NewsletterHubspot />
 				<div className="footer__content">
 					<FooterLinks />
 					<SocialMedia />

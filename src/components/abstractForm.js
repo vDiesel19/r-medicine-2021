@@ -226,7 +226,7 @@ const AbstractForm = () => {
 			</div>
 			<div className="abstract__form-section">
 				<h2 className="abstract__form-header">Code of Conduct</h2>
-				<p className="abstract__form-subheader">Please read the <Link to="/code-of-conduct">R/Medicine Code of Conduct.</Link></p>
+				<p className="abstract__form-subheader">Please read the <a href="/code-of-conduct" target="_blank">R/Medicine Code of Conduct.</a></p>
 				<div className="abstract__field-group field-group--checkbox">
 					<label htmlFor="code_conduct">
 						<input type="checkbox" id="code_conduct" name="code_conduct" onClick={() => enableSubmit()} />
