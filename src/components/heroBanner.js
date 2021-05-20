@@ -31,7 +31,7 @@ const HeroBanner = () => {
 					<div className="hero-banner__img">
 						<picture>
 							<source srcSet={tabletBanner} media="(max-width: 767px)"></source>
-							<img src={desktopBanner} alt="" />
+							<img src={desktopBanner} alt="R Medicine" />
 						</picture>
 					</div>
 				</div>
