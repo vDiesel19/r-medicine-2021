@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, Link, graphql } from 'gatsby';
 import desktopBanner from '../assets/homepage_hero_desktop_2.jpg';
 import tabletBanner from '../assets/homepage_hero_tablet.jpg';
 
@@ -26,6 +26,14 @@ const HeroBanner = () => {
 							<h1 className="hero-banner__header">{data.markdownRemark.frontmatter.heroheader_line_1}<br /><span>{data.markdownRemark.frontmatter.heroheader_line_2}</span></h1>
 							<p className="hero-banner__subheader">{data.markdownRemark.frontmatter.herosubheader}</p>
 							<p className="hero-banner__text">{data.markdownRemark.frontmatter.herotext}</p>
+							<div className="hero-banner__buttons">
+								<button class="hero-banner__cta" type="text">
+									<Link to="/">Register</Link>
+								</button>
+								<button class="hero-banner__cta" type="text">
+									<Link to="/abstract">Submit An Abstract</Link>
+								</button>
+							</div>
 						</div>
 					</div>
 					<div className="hero-banner__img">

@@ -83,17 +83,42 @@
 			padding: 0;
 			margin: 10px 0 0 0;
 		}
+		select {
+			margin: 5px 0 0 0;
+			padding: 12px;
+			border-radius: 0;
+			border: 1px solid #c9c9c9;
+			width: 97%;
+			@include reader {
+				width: 98%;
+			}
+			@include mobile {
+				width: 100%;
+			}
+		}
 	}
 	&__field-group {
-		&.field-group--resource {
-			width: 98%;
-			@include reader {
-				width: 99%;
+		&.field-group--full-width {
+			display: block;
+			&.field-group--resource {
+				label {
+					&:last-child {
+						input {
+							margin: 5px 0 0 0;
+						}
+					}
+				}
+				input {
+					margin: 5px 0 15px 0;
+				}
 			}
 			label {
-				width: 32%;
-				@include reader {
-					width: 100%;
+				width: 100%;
+			}
+			input {
+				width: 95%;
+				@include mobile {
+					width: 92%;
 				}
 			}
 		}

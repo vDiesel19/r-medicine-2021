@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AppContext from '../context/appContext';
+import SEO from "../components/seo";
 import Header from '../components/header';
 import HeroBanner from '../components/heroBanner';
 import SectionHeader from '../components/sectionHeader';

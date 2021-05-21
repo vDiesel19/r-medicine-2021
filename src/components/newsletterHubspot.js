@@ -20,8 +20,6 @@ const NewsletterHubspot = () => {
 			firstname: form.get('first_name'),
 			lastname: form.get('last_name'),
 		};
-
-    const xhr = new XMLHttpRequest();
 		const postUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`;
 
 		// Example request JSON:
@@ -40,10 +38,9 @@ const NewsletterHubspot = () => {
           name: 'email',
           value: formData.email,
         },
-      ],
+      ]
     };
 
-		/*
 		fetch(postUrl, {
       method: 'post',
       body: JSON.stringify(body),
@@ -58,36 +55,20 @@ const NewsletterHubspot = () => {
         setContext(Object.assign({}, context, { 
           successMessage: false
         }));
-      }, 3000);
+			}, 3000);
+			document.getElementById('newsletter-form').reset();
     })
 		.catch((error) => alert(error))
-		*/
-
-		var final_data = JSON.stringify(body);
-		xhr.open("POST", postUrl);
-		xhr.setRequestHeader("Content-Type", "application/json");
-		xhr.onreadystatechange = function () {
-			if (xhr.readyState == 4 && xhr.status == 200) {
-				alert(xhr.responseText); 
-			} else if (xhr.readyState == 4 && xhr.status == 400) {
-				alert(xhr.responseText); 
-			} else if (xhr.readyState == 4 && xhr.status == 403) {
-				alert(xhr.responseText);
-			} else if (xhr.readyState == 4 && xhr.status == 404) {
-				alert(xhr.responseText);
-			}
-		};
-		// Sends the request
-		xhr.send(final_data);
   }
 	
 	return (
 		<div className="newsletter">
-			<h3 className="newsletter__header">join our newsletter</h3>
+			<h3 className="newsletter__header">Join our mailing list to hear all the latest about events, news and more.</h3>
 			{context.successMessage &&
-				<p className="newsletter__success">thank you</p>
+				<p className="newsletter__success">Thank you for joining our newsletter.</p>
 			}
 			<form
+				id="newsletter-form"
 				name="newsletter"
 				method="post"
 				onSubmit={(e) => handleSubmit(e)}

@@ -27,7 +27,7 @@
             bottom: 20%;
         }
         @include mobile {
-            bottom: 11%;
+            bottom: 7%;
         }
     }
     &__content {
@@ -72,6 +72,42 @@
         @include mobile {
             width: 100%;
             font-size: 18px;
+        }
+    }
+    &__buttons {
+        margin: 20px auto 0;
+        display: flex;
+        justify-content: space-between;
+        width: fit-content;
+    }
+    &__cta {
+        width: 200px;
+        border: 0;
+		outline: 0;
+		background-color: transparent;
+		border: 2px solid #fff;
+        padding: 15px 0;
+        margin: 0 10px;
+		color: $teal;
+        text-transform: uppercase;
+        display: block;
+        cursor: pointer;
+        @include reader {
+            width: 180px;
+        }
+        @include mobile {
+            width: 150px;
+            font-size: 12px;
+        }
+		&:hover,
+		&:focus {
+			color: #fff;
+            background-color: $teal;
+            border: 2px solid $teal;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
         }
     }
 }

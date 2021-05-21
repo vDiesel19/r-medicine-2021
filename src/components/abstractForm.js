@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { navigate, Link } from 'gatsby';
+import moment from 'moment-timezone';
+import { navigate } from 'gatsby';
 
 function encode(data) {
   return Object.keys(data)
@@ -9,6 +10,7 @@ function encode(data) {
 
 const AbstractForm = () => {
 	const [state, setState] = useState({});
+	const timeZones = moment.tz.names();
 
   const handleChange = (e) => {
 		setState({ 
@@ -31,10 +33,8 @@ const AbstractForm = () => {
 		})
 	}
 	
-	const enableSubmit = () => {
-		const conductInput = document.getElementById('code_conduct');
-		const hardwareInput = document.getElementById('hardware');
-		if (conductInput.checked && hardwareInput.checked) {
+	const enableSubmit = (e) => {
+		if (e.target.checked) {
 			document.getElementById('abstract-submit').disabled = false;
 		} else {
 			document.getElementById('abstract-submit').disabled = true;
@@ -80,19 +80,32 @@ const AbstractForm = () => {
 						<br />
 						<input type="text" name="name" id="name" onChange={(e) => handleChange(e)} required />
 					</label>
+					<label htmlFor="organization">Organization<span>*</span>  
+						<br />
+						<input type="text" name="organization" id="organization" onChange={(e) => handleChange(e)} required />
+					</label>
+				</div>
+				<div className="abstract__field-group">
+					<label htmlFor="job_title">Job Title<span>*</span>  
+						<br />
+						<input type="text" name="job_title" id="job_title" onChange={(e) => handleChange(e)} required />
+					</label>
 					<label htmlFor="email">Email<span>*</span> 
 						<br />
 						<input type="text" name="email" id="email" onChange={(e) => handleChange(e)} required />
 					</label>
 				</div>
 				<div className="abstract__field-group">
-					<label htmlFor="organization">Organization<span>*</span>  
+					<label htmlFor="timezone">Time Zone<span>*</span>  
 						<br />
-						<input type="text" name="organization" id="organization" onChange={(e) => handleChange(e)} required />
-					</label>
-					<label htmlFor="job_title">Job Title<span>*</span>  
-						<br />
-						<input type="text" name="job_title" id="job_title" onChange={(e) => handleChange(e)} required />
+						<select name="timezone" id="timezone" required>
+							<option value="">Please Select Your Timezone</option>
+							{timeZones.map(zone => {
+								return (
+									<option value={zone} key={zone}>{zone}</option>
+								);
+							})}
+						</select>
 					</label>
 				</div>
 				<div className="abstract__field-group">
@@ -143,6 +156,7 @@ const AbstractForm = () => {
 			</div>
 			<div className="abstract__form-section">
 				<h2 className="abstract__form-header">Additional Speakers</h2>
+				<p className="abstract__form-subheader">We encourage team presentations! This way the person who isn't currently presenting can interact with the audience, field questions, and share links in the chat.</p>
 				<fieldset>
 					<legend>Additional Speaker 1</legend>
 					<label htmlFor="speaker_1_name">Name: 
@@ -181,27 +195,29 @@ const AbstractForm = () => {
 					</label>
 					<label htmlFor="workshop">
 						<input type="radio" id="workshop" name="submission_type" value="workshop" onClick={(e) => handleRadio(e)} />
-						Workshop Proposal
+						Tutorial/Workshop (30 minutes to 3.5 hours)
 					</label>
 				</fieldset>
-				<p className="abstract__form-subheader">If your talk is selected, the Abstract Title you choose will be the Title shown in the conference schedule, often what attendees use as a starting point to determine if they will be interested in the talk. Choose your title carefully - make sure that it accurately describes what your talk will cover.</p>
-				<div className="abstract__field-group">
-					<label htmlFor="abstract_title">Abstract Title<span>*</span> 
+				<p className="abstract__form-subheader">*Please note that if your talk is selected as a <strong>Lightning</strong> talk, we request that you submit a recording of the talk.</p>
+				<p className="abstract__form-subheader">If your talk is selected, the Abstract Title you choose will be the Title shown in the conference schedule, often what attendees use as a starting point to determine if they will be interested in the talk. Choose your title carefully&mdash;make sure that it accurately describes what your talk will cover.</p>
+				<div className="abstract__field-group field-group--full-width">
+					<label htmlFor="abstract_title" className="abstract__label-title">Abstract Title<span>*</span> 
 						<br />
 						<input type="text" name="abstract_title" onChange={(e) => handleChange(e)} required />
 					</label>
 				</div>
-				<p className="abstract__form-subheader">Please write 2-3 sentences to describe the intended audience of the talk and how your audience (and the R/Medicine community) will benefit from your presentation.</p>
+				<p className="abstract__form-subheader">Provide an abstract that briefly summarizes your proposal (250 words maximum). Please write complete sentences, not bullet points.</p>
 				<div className="abstract__field-group">
 					<label htmlFor="abstract" className="abstract__label-textarea">Abstract<span>*</span>  
 						<br />
-						<textarea name="abstract" id="abstract" rows="5" maxLength="250" onChange={(e) => handleChange(e)} required ></textarea>
+						<textarea name="abstract" id="abstract" rows="10" maxLength="1250" onChange={(e) => handleChange(e)} required ></textarea>
 					</label>
 				</div>
+				<p className="abstract__form-subheader">Please write 2-3 sentences to describe the intended audience of the talk and how your audience (and the R/Medicine community) will benefit from your presentation.</p>
 				<div className="abstract__field-group">
-					<label htmlFor="audience">Intended Audience<span>*</span>  
+					<label htmlFor="audience" className="abstract__label-textarea">Intended Audience<span>*</span>  
 						<br />
-						<input type="text" name="audience" id="audience" onChange={(e) => handleChange(e)} required />
+						<textarea type="text" name="audience" id="audience" rows="5" onChange={(e) => handleChange(e)} required></textarea>
 					</label>
 				</div>
 			</div>
@@ -209,7 +225,7 @@ const AbstractForm = () => {
 				<h2 className="abstract__form-header">Additional Information</h2>
 				<p className="abstract__form-subheader">The R/Medicine Program Committee reviews many proposals, and having extra resources helps us gauge the speaker's experience and expertise.</p>
 				<p className="abstract__form-subheader">If you have any links to previous talks showcasing you or any of your speakers, please share below. Other resources, like links to published books, LinkedIn profiles, or relevant blog posts, are also appreciated. We welcome applications from new speakers, so don't worry if you don't have previous talk recordings to submit here. Even a YouTube video of yourself speaking for a couple of minutes could help the reviewers.</p>
-				<div className="abstract__field-group field-group--resource">
+				<div className="abstract__field-group field-group--full-width field-group--resource">
 					<label htmlFor="resource_1">Resource 1:
 						<br />
 						<input type="text" name="resource_1" id="resource_1" placeholder="" onChange={(e) => handleChange(e)} />
@@ -229,15 +245,8 @@ const AbstractForm = () => {
 				<p className="abstract__form-subheader">Please read the <a href="/code-of-conduct" target="_blank">R/Medicine Code of Conduct.</a></p>
 				<div className="abstract__field-group field-group--checkbox">
 					<label htmlFor="code_conduct">
-						<input type="checkbox" id="code_conduct" name="code_conduct" onClick={() => enableSubmit()} />
-						I agree to abide by the Linux Foundation Code of Conduct.
-					</label>
-				</div>
-				<p className="abstract__form-subheader">This event will be online only. We require presenters to help in creating the best experience possible. Please confirm that you have access to a computer with a camera, microphone and high-speed internet for delivering your presentation online.</p>
-				<div className="abstract__field-group field-group--checkbox">
-					<label htmlFor="hardware">
-						<input type="checkbox" id="hardware" name="hardware" onClick={() => enableSubmit()} />
-						I do.
+						<input type="checkbox" id="code_conduct" name="code_conduct" onClick={(e) => enableSubmit(e)} />
+						I agree to abide by the Linux Foundation Code of Conduct.<span>*</span>
 					</label>
 				</div>
 			</div>
