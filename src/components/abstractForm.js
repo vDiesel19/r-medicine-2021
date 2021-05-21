@@ -130,27 +130,27 @@ const AbstractForm = () => {
 				<fieldset className="fieldset--radio">
 					<legend>What gender does the primary speaker identify with?</legend>
 					<label htmlFor="male">
-						Male
 						<input type="radio" id="male" name="gender" value="male" onClick={(e) => handleRadio(e)} />
+						Male
 					</label>
 					<label htmlFor="female">
-						Female
 						<input type="radio" id="female" name="gender" value="female" onClick={(e) => handleRadio(e)} />
+						Female
 					</label>
 					<label htmlFor="other">
-						Other
 						<input type="radio" id="other" name="gender" value="other" onClick={(e) => handleRadio(e)} />
+						Other
 					</label>
 				</fieldset>
 				<fieldset className="fieldset--radio">
 					<legend>Does the primary speaker identify as a person of color?</legend>
 					<label htmlFor="yes">
-						Yes
 						<input type="radio" id="yes" name="poc" value="yes" onClick={(e) => handleRadio(e)} />
+						Yes
 					</label>
 					<label htmlFor="no">
-						No
 						<input type="radio" id="no" name="poc" value="no" onClick={(e) => handleRadio(e)} />
+						No
 					</label>
 				</fieldset>
 			</div>

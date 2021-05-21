@@ -140,15 +140,13 @@
 		&.fieldset--radio {
 			display: block;
 			label {
-				width: fit-content;
-				display: flex;
-				flex-direction: row-reverse;
-				align-items: center;
+				display: block;
+				width: 100%;
 				margin: 0 0 10px 0;
 			}
 			input {
 				width: unset;
-				margin: 0 5px 0 0;
+				margin: 5px 5px 0 0;
 			}
 			span {
 				color: #ab0011;
