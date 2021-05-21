@@ -85,19 +85,28 @@
         text-decoration: none;
     }
     &__cta {
-        width: 200px;
+        width: 230px;
         border: 0;
 		outline: 0;
 		background-color: transparent;
-		border: 2px solid #fff;
-        padding: 15px 0;
+        border: 2px solid #fff;
+        background-color: $teal;
+        padding: 25px 0;
         margin: 0 10px;
+        font-size: 17px;
 		color: #fff;
         text-transform: uppercase;
         display: block;
         cursor: pointer;
+        transition: all .2s ease-in;
+        @include tablet {
+            width: 220px;
+            font-size: 16px;
+            padding: 15px 0;
+        }
         @include reader {
-            width: 180px;
+            width: 190px;
+            font-size: 14px
         }
         @include mobile {
             width: 150px;
@@ -105,8 +114,9 @@
         }
 		&:hover,
 		&:focus {
-			color: #fff;
-            background-color: $teal;
+            color: $teal;
+            transition: all .2s ease-out;
+            background-color: #fff;
             border: 2px solid $teal;
         }
     }

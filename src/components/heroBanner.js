@@ -2,11 +2,12 @@ import React from 'react';
 import { StaticQuery, Link, graphql } from 'gatsby';
 import desktopBanner from '../assets/homepage_hero_desktop_2.jpg';
 import tabletBanner from '../assets/homepage_hero_tablet.jpg';
+import parse from 'html-react-parser';
 
 const HeroBanner = () => {
 	return (
 		<StaticQuery
-		  	query={graphql`
+		  query={graphql`
 				query HeroBannerQuery {
 					markdownRemark(frontmatter: {id: {eq: "hero-banner"}}) {
 						frontmatter {
@@ -17,15 +18,14 @@ const HeroBanner = () => {
 						}
 					}
 				}
-				
-		  	`}
-		  	render={data => (
+		  `}
+		  render={data => (
 				<div className="hero-banner">
 					<div className="hero-banner__wrapper">
 						<div className="hero-banner__content">
 							<h1 className="hero-banner__header">{data.markdownRemark.frontmatter.heroheader_line_1}<br /><span>{data.markdownRemark.frontmatter.heroheader_line_2}</span></h1>
 							<p className="hero-banner__subheader">{data.markdownRemark.frontmatter.herosubheader}</p>
-							<p className="hero-banner__text">{data.markdownRemark.frontmatter.herotext}</p>
+							<p className="hero-banner__text">{parse(data.markdownRemark.frontmatter.herotext)}</p>
 							<div className="hero-banner__buttons">
 								<Link className="hero-banner__cta-link" to="/">
 									<button className="hero-banner__cta" type="text">

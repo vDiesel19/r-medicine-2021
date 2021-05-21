@@ -16,9 +16,9 @@ const Abstract = () => {
 						<li>Regular Talk (20 minutes)</li>
 						<li>Tutorial/Workshop (30 minutes to 3.5 hours)</li>
 					</ol>
-					<p className="abstract__top-subheader">For 2021, we are particularly interested in submissions that highlight the following topics:</p>
+					<p className="abstract__top-subheader">We are particularly interested in submissions that discuss the following topics:</p>
 					<ul>
-						<li>Clinical Trials</li>
+						<li>Clinical trials</li>
 						<li>Analytic bias and data ethics</li>
 						<li>New analysis approaches and packages</li>
 						<li>Data visualization</li>
@@ -26,7 +26,7 @@ const Abstract = () => {
 						<li>Data management and analysis workflows</li>
 						<li>Applied uses of R in clinical practice</li>
 					</ul>
-					<p>*Please note that this form does not allow saving information and coming back later. Be prepared to fill it out completely and make sure to hit the "Submit" button when you are done!</p>
+					<p><strong>Please note that this form does not allow saving information and coming back later. Be prepared to fill it out completely and make sure to hit the "Submit" button when you are done!</strong></p>
 				</div>
 				<div className="abstract__form-wrapper">
 					<AbstractForm />

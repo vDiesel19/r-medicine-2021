@@ -95,7 +95,7 @@ const SEO = ({ lang, meta }) => {
 
 SEO.propTypes = {
   lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object)
+  meta: PropTypes.arrayOf(PropTypes.object),
 }
 
 export default SEO;

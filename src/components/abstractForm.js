@@ -109,7 +109,7 @@ const AbstractForm = () => {
 					</label>
 				</div>
 				<div className="abstract__field-group">
-					<label htmlFor="bio" className="abstract__label-textarea">Biography: 
+					<label htmlFor="bio" className="abstract__label-textarea">Brief biography: 
 						<br />
 						<textarea name="bio" id="bio" rows="5" onChange={(e) => handleChange(e)}></textarea>
 					</label>
@@ -130,27 +130,27 @@ const AbstractForm = () => {
 				<fieldset className="fieldset--radio">
 					<legend>What gender does the primary speaker identify with?</legend>
 					<label htmlFor="male">
-						<input type="radio" id="male" name="gender" value="male" onClick={(e) => handleRadio(e)} />
 						Male
+						<input type="radio" id="male" name="gender" value="male" onClick={(e) => handleRadio(e)} />
 					</label>
 					<label htmlFor="female">
-						<input type="radio" id="female" name="gender" value="female" onClick={(e) => handleRadio(e)} />
 						Female
+						<input type="radio" id="female" name="gender" value="female" onClick={(e) => handleRadio(e)} />
 					</label>
 					<label htmlFor="other">
-						<input type="radio" id="other" name="gender" value="other" onClick={(e) => handleRadio(e)} />
 						Other
+						<input type="radio" id="other" name="gender" value="other" onClick={(e) => handleRadio(e)} />
 					</label>
 				</fieldset>
 				<fieldset className="fieldset--radio">
 					<legend>Does the primary speaker identify as a person of color?</legend>
 					<label htmlFor="yes">
-						<input type="radio" id="yes" name="poc" value="yes" onClick={(e) => handleRadio(e)} />
 						Yes
+						<input type="radio" id="yes" name="poc" value="yes" onClick={(e) => handleRadio(e)} />
 					</label>
 					<label htmlFor="no">
-						<input type="radio" id="no" name="poc" value="no" onClick={(e) => handleRadio(e)} />
 						No
+						<input type="radio" id="no" name="poc" value="no" onClick={(e) => handleRadio(e)} />
 					</label>
 				</fieldset>
 			</div>
@@ -198,7 +198,7 @@ const AbstractForm = () => {
 						Tutorial/Workshop (30 minutes to 3.5 hours)
 					</label>
 				</fieldset>
-				<p className="abstract__form-subheader">*Please note that if your talk is selected as a <strong>Lightning</strong> talk, we request that you submit a recording of the talk.</p>
+				<p className="abstract__form-subheader">*Please note that if your talk is selected as a <strong>Lightning</strong> talk, we will request that you submit a recording of the talk.</p>
 				<p className="abstract__form-subheader">If your talk is selected, the Abstract Title you choose will be the Title shown in the conference schedule, often what attendees use as a starting point to determine if they will be interested in the talk. Choose your title carefully&mdash;make sure that it accurately describes what your talk will cover.</p>
 				<div className="abstract__field-group field-group--full-width">
 					<label htmlFor="abstract_title" className="abstract__label-title">Abstract Title<span>*</span> 
@@ -206,7 +206,7 @@ const AbstractForm = () => {
 						<input type="text" name="abstract_title" onChange={(e) => handleChange(e)} required />
 					</label>
 				</div>
-				<p className="abstract__form-subheader">Provide an abstract that briefly summarizes your proposal (250 words maximum). Please write complete sentences, not bullet points.</p>
+				<p className="abstract__form-subheader">Provide an abstract that briefly summarizes your proposal (1250 characters maximum). Please write complete sentences, not bullet points.</p>
 				<div className="abstract__field-group">
 					<label htmlFor="abstract" className="abstract__label-textarea">Abstract<span>*</span>  
 						<br />

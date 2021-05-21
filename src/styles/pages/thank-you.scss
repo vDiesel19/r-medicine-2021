@@ -30,16 +30,21 @@
         }
 	}
 	&__text {
+        width: 75%;
         font-family: sans-serif;
         font-size: 18px;
         line-height: 1.6;
-        margin: 0 auto 20px;
+        margin: 0 auto;
         color: #474747;
+        @include reader {
+            width: 85%;
+            font-size: 16px;
+        }
+        @include mobile {
+            width: 100%;
+        }
         &:last-child {
             margin: 0 auto;
-        }
-        @include reader {
-            font-size: 16px;
         }
     }
 }
