@@ -27,12 +27,16 @@ const HeroBanner = () => {
 							<p className="hero-banner__subheader">{data.markdownRemark.frontmatter.herosubheader}</p>
 							<p className="hero-banner__text">{data.markdownRemark.frontmatter.herotext}</p>
 							<div className="hero-banner__buttons">
-								<button className="hero-banner__cta" type="text">
-									<Link to="/">Register</Link>
-								</button>
-								<button className="hero-banner__cta" type="text">
-									<Link to="/abstract">Submit An Abstract</Link>
-								</button>
+								<Link className="hero-banner__cta-link" to="/">
+									<button className="hero-banner__cta" type="text">
+										Register
+									</button>
+								</Link>
+								<Link className="hero-banner__cta-link" to="/abstract">
+									<button className="hero-banner__cta" type="text">
+										Submit An Abstract
+									</button>
+								</Link>
 							</div>
 						</div>
 					</div>

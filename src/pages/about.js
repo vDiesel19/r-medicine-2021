@@ -12,7 +12,7 @@ const About = ({ data, }) => {
 				<div className="about__content">
 					{data.markdownRemark.frontmatter.content.map(item => {
 						return (
-							<p className="about__text">{item.text}</p>
+							<p className="about__text" key={item.text}>{item.text}</p>
 						)
 					})}
 				</div>

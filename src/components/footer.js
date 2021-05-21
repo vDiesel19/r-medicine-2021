@@ -3,7 +3,7 @@ import NewsletterHubspot from './newsletterHubspot';
 import FooterLinks from './footerLinks';
 import SocialMedia from './socialMedia';
 
-const Footer = (props) => {
+const Footer = () => {
 	return (
 		<footer className="footer">
 			<div className="footer__wrapper">

@@ -98,7 +98,7 @@ const AbstractForm = () => {
 				<div className="abstract__field-group">
 					<label htmlFor="timezone">Time Zone<span>*</span>  
 						<br />
-						<select name="timezone" id="timezone" required>
+						<select name="timezone" id="timezone" onChange={(e) => handleChange(e)} required>
 							<option value="">Please Select Your Timezone</option>
 							{timeZones.map(zone => {
 								return (
