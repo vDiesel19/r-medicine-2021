@@ -7,8 +7,10 @@ const ThankYou = () => {
 		<div>
 			<Header />
 			<div className="thank-you">
-				<h1 className="thank-you__header">Thank you for submitting an Abstract!</h1>
-				<p className="thank-you__text">If you are chosen to speak you will be contacted at a later date.</p>
+				<div className="thank-you__content">
+					<h1 className="thank-you__header">Thank you for submitting an Abstract!</h1>
+					<p className="thank-you__text">If you are chosen to speak you will be contacted at a later date.</p>
+				</div>
 			</div>
       <Footer />
 		</div>

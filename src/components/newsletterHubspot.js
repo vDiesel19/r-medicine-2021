@@ -1,14 +1,15 @@
-import React, { useContext } from 'react';
-import AppContext from '../context/appContext';
+import React, { useState } from 'react';
 
 const NewsletterHubspot = () => {
-	const [context, setContext] = useContext(AppContext);
-
-  const handleChange = (e) => {
-    setContext(Object.assign({}, context, { 
-      [e.target.name]: e.target.value
-    }));
-  }
+	const [state, setState] = useState({});
+	const [success, setSuccess] = useState(false);
+	
+	const handleChange = (e) => {
+		setState({ 
+			...state,
+			[e.target.name]: e.target.value 
+		})
+	};
 
   const handleSubmit = (e) => {
 		e.preventDefault()
@@ -50,12 +51,9 @@ const NewsletterHubspot = () => {
       }),
     })
     .then(() => {
-      setContext(Object.assign({}, context, { successMessage: true }));
-      setTimeout(() => {
-        setContext(Object.assign({}, context, { 
-          successMessage: false
-        }));
-			}, 3000);
+      setSuccess({ 
+				success: true
+			});
 			document.getElementById('newsletter-form').reset();
     })
 		.catch((error) => alert(error))
@@ -64,7 +62,7 @@ const NewsletterHubspot = () => {
 	return (
 		<div className="newsletter">
 			<h3 className="newsletter__header">Join our mailing list to hear all the latest about events, news and more.</h3>
-			{context.successMessage &&
+			{success &&
 				<p className="newsletter__success">Thank you for joining our newsletter.</p>
 			}
 			<form
