@@ -15,6 +15,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets`,
+        name: `assets`
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "R/Medicine 2021",
@@ -27,7 +34,26 @@ module.exports = {
         crossOrigin: `use-credentials`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-twitter-cards`,
+            options: {
+              title: "R/Medicine 2021 | Linux Foundation Events",
+              separator: "|",
+              author: "The Linux Foundation",
+              background: require.resolve("./src/assets/r_medicine_twitter_card.jpg"),
+              fontColor: "#000000",
+              titleFontSize: 96,
+              subtitleFontSize: 60,
+              fontStyle: "monospace",
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
   ],
