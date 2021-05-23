@@ -3,11 +3,9 @@ import moment from 'moment-timezone';
 import { navigate } from 'gatsby';
 
 function encode(data) {
-  const formData = new FormData()
-  for (const key of Object.keys(data)) {
-    formData.append(key, data[key])
-  }
-  return formData;
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
 }
 
 const AbstractForm = () => {
