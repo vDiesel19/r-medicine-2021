@@ -3,9 +3,13 @@ import moment from 'moment-timezone';
 import { navigate } from 'gatsby';
 
 function encode(data) {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
+  const formData = new FormData()
+
+  for (const key of Object.keys(data)) {
+    formData.append(key, data[key])
+  }
+
+  return formData
 }
 
 const AbstractForm = () => {
@@ -46,7 +50,6 @@ const AbstractForm = () => {
     const form = e.target
     fetch('/', {
       method: 'POST',
-      headers: { 'Content-Type': 'multipart/form-data' },
       body: encode({
         'form-name': form.getAttribute('name'),
         ...state,
