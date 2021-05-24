@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import moment from 'moment-timezone';
 import { navigate } from 'gatsby';
 
 function encode(data) {
@@ -12,9 +11,8 @@ function encode(data) {
   return formData
 }
 
-const AbstractForm = () => {
+const AbstractForm = ({ zones }) => {
 	const [state, setState] = useState({});
-	const timeZones = moment.tz.names();
 
   const handleChange = (e) => {
 		setState({ 
@@ -95,7 +93,7 @@ const AbstractForm = () => {
 					</label>
 					<label htmlFor="email">Email<span>*</span> 
 						<br />
-						<input type="text" name="email" id="email" onChange={(e) => handleChange(e)} required />
+						<input type="email" name="email" id="email" onChange={(e) => handleChange(e)} required />
 					</label>
 				</div>
 				<div className="abstract__field-group">
@@ -103,7 +101,7 @@ const AbstractForm = () => {
 						<br />
 						<select name="timezone" id="timezone" onChange={(e) => handleChange(e)} required>
 							<option value="">Please Select Your Timezone</option>
-							{timeZones.map(zone => {
+							{zones.map(zone => {
 								return (
 									<option value={zone} key={zone}>{zone}</option>
 								);
@@ -126,7 +124,7 @@ const AbstractForm = () => {
 				<div className="abstract__field-group">
 					<label htmlFor="headshot">Headshot: <span className="file-type">(jpeg, jpg, or png accepted)</span>
 						<br />
-						<input type="file" name="headshot" id="headshot" onChange={(e) => handleAttachment(e)} />
+						<input type="file" name="headshot" id="headshot" accept="image/png, image/jpeg, image/jpg" onChange={(e) => handleAttachment(e)} />
 					</label>
 				</div>
 				<p className="abstract__form-subheader">R/Medicine is committed to a diverse and inclusive community. The following questions (which are optional) are asked in an effort to track our progress in increasing diversity at events, and will remain confidential.</p>
@@ -168,7 +166,7 @@ const AbstractForm = () => {
 					</label>
 					<label htmlFor="speaker_1_email">Email: 
 						<br />
-						<input type="text" name="speaker_1_email" id="speaker_1_email" onChange={(e) => handleChange(e)} />
+						<input type="email" name="speaker_1_email" id="speaker_1_email" onChange={(e) => handleChange(e)} />
 					</label>
 				</fieldset>
 				<fieldset>
@@ -179,7 +177,7 @@ const AbstractForm = () => {
 					</label>
 					<label htmlFor="speaker_2_email">Email: 
 						<br />
-						<input type="text" name="speaker_2_email" id="speaker_2_email" onChange={(e) => handleChange(e)} 
+						<input type="email" name="speaker_2_email" id="speaker_2_email" onChange={(e) => handleChange(e)} 
 						/>
 					</label>
 				</fieldset>

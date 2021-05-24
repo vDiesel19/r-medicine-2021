@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import AbstractForm from '../components/abstractForm';
+import { TIME_ZONES } from '../helpers/timezones';
 
 const Abstract = () => {
 	return (
@@ -29,7 +30,7 @@ const Abstract = () => {
 					<p><strong>Please note that this form does not allow saving information and coming back later. Be prepared to fill it out completely and make sure to hit the "Submit" button when you are done!</strong></p>
 				</div>
 				<div className="abstract__form-wrapper">
-					<AbstractForm />
+					<AbstractForm zones={TIME_ZONES} />
 				</div>
 			</div>
 			<Footer />

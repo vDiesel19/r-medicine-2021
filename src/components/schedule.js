@@ -24,7 +24,6 @@ const Schedule = () => {
 						}
 					}
 				}
-				
 		  	`}
 		  	render={data => (
 				<div className="schedule">
