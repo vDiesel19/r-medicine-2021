@@ -55,6 +55,8 @@ const Seo = () => {
 					<meta name="twitter:image" 
 						content={`${origin}${data.markdownRemark.frontmatter.image.childImageSharp.fluid.originalImg}`} 
 					/>
+					<meta name="twitter:image:width" content="800" />
+					<meta name="twitter:image:height" content="400" />
         </Helmet>
 			)}
 		/>
