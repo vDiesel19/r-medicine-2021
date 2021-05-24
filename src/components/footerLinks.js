@@ -25,13 +25,13 @@ const FooterLinks = () => {
 				<p className="footer-links__category--header">Past Events</p>
 				<ul className="footer-links__list">
 					<li>
-						<a href="https://events.linuxfoundation.org/r-medicine/" targer="_blank" rel="noreferrer">R/Medicine 2020</a>
+						<a href="https://events.linuxfoundation.org/r-medicine/" target="_blank" rel="noreferrer">R/Medicine 2020</a>
 					</li>
 					<li>
-						<a href="https://r-medicine-2019.netlify.app/" targer="_blank" rel="noreferrer">R/Medicine 2019</a>
+						<a href="https://r-medicine-2019.netlify.app/" target="_blank" rel="noreferrer">R/Medicine 2019</a>
 					</li>
 					<li>
-						<a href="https://r-medicine-2018.netlify.app/" targer="_blank" rel="noreferrer">R/Medicine 2018</a>
+						<a href="https://r-medicine-2018.netlify.app/" target="_blank" rel="noreferrer">R/Medicine 2018</a>
 					</li>
 				</ul>
 			</div>
