@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import AppContext from '../context/appContext';
+import Seo from '../components/seo';
 import Header from '../components/header';
 import HeroBanner from '../components/heroBanner';
 import SectionHeader from '../components/sectionHeader';
 import SponsorsTop from '../components/sponsorsTop';
 import Organizers from '../components/organizers';
 import Schedule from '../components/schedule';
-import SponsorsBottom from '../components/sponsorsBottom';
 import Footer from '../components/footer';
 
 export default function Home() {
@@ -20,6 +20,7 @@ export default function Home() {
   return (
     <AppContext.Provider value={stateHook}>
       <div className="app">
+        <Seo />
         <Header />
         <HeroBanner />
         <SectionHeader header="Brought to You By" />

@@ -15,19 +15,17 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "R/Medicine 2021",
-        short_name: "R/Medicine 2021",
-        start_url: "/",
-        background_color: "#ffffff",
-        theme_color: "#ffffff",
-        display: "standalone",
-        icon: "src/assets/favicon-32x32.png",
-        crossOrigin: `use-credentials`,
+        path: `${__dirname}/src/assets`,
+        name: `assets`
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
+    `gatsby-remark-images`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
   ],
 }
