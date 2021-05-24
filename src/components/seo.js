@@ -1,7 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
-import twitterImg from '../markdown/r_medicine_twitter_card.jpg';
 
 const Seo = () => {
 	let origin = "";
@@ -36,7 +35,7 @@ const Seo = () => {
 					<title>{data.markdownRemark.frontmatter.title}</title>
 					<meta name="description" content={data.markdownRemark.frontmatter.description} />
 					<meta name="image" 
-						content={`${origin}${twitterImg}`} 
+						content={`${origin}${data.markdownRemark.frontmatter.image.childImageSharp.fluid.originalImg}`} 
 					/>
 					<link rel="canonical" href={data.markdownRemark.frontmatter.siteUrl} />
 
@@ -45,7 +44,7 @@ const Seo = () => {
 					<meta property="og:title" content={data.markdownRemark.frontmatter.title} />
 					<meta property="og:description" content={data.markdownRemark.frontmatter.description} />
 					<meta name="og:image" 
-						content={`${origin}${twitterImg}`} 
+						content={`${origin}${data.markdownRemark.frontmatter.image.childImageSharp.fluid.originalImg}`} 
 					/>
 
 					{/* Twitter Card tags */}
@@ -54,7 +53,7 @@ const Seo = () => {
 					<meta name="twitter:title" content={data.markdownRemark.frontmatter.title} />
 					<meta name="twitter:description" content={data.markdownRemark.frontmatter.description} />
 					<meta name="twitter:image" 
-						content={`${origin}${twitterImg}`} 
+						content={`${origin}${data.markdownRemark.frontmatter.image.childImageSharp.fluid.originalImg}`} 
 					/>
         </Helmet>
 			)}
