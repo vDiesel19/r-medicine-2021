@@ -20,6 +20,7 @@ import './src/styles/components/schedule.scss';
 import './src/styles/components/products.scss';
 import './src/styles/components/abstract-form.scss';
 import './src/styles/components/cc-modal.scss';
+import './src/styles/components/hubspot-form.scss';
 import './src/styles/pages/abstract.scss';
 import './src/styles/pages/about.scss';
 import './src/styles/pages/code-of-conduct.scss';
