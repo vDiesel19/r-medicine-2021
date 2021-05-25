@@ -112,6 +112,7 @@
 		}
 	}
 	.hs_submit {
+		width: 100%;
 		margin: 0 auto;
 		text-align: center;
 		input {
@@ -133,5 +134,16 @@
 
 			}
 		}
+	}
+	.hs_error_rollup {
+		margin: 0 auto 15px;
+	}
+	.hs-error-msg, 
+	.hs-error-msgs label {
+		font-family: sans-serif;
+		font-size: 13px;
+		font-weight: bold;
+		margin: 5px 0 0;
+    	color: #ff917d;
 	}
 }
