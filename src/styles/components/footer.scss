@@ -52,4 +52,16 @@
             }
         }
     }
+    &__newsletter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 685px;
+        margin: 0 auto;
+        @include reader {
+            flex-direction: column;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
 }

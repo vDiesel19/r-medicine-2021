@@ -1,0 +1,149 @@
+@import '../includes/_variables.scss';
+@import '../includes/_mixins.scss';
+
+#r-med-hubspot-form {
+	form {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@include reader {
+			flex-direction: column;
+			flex-wrap: nowrap;
+		}
+	}
+	fieldset {
+		max-width: unset;
+		text-align: left;
+		@include reader {
+			margin: 0 auto;
+		}
+		&:nth-child(1), 
+		&:nth-child(4) {
+			width: 100%;
+		}
+		&:nth-child(2) {
+			width: calc(70% - 10px);
+			@include reader {
+				width: 240px;
+			}
+		}
+		&:nth-child(3) {
+			width: 30%;
+			@include reader {
+				width: 240px;
+			}
+		}
+		&.form-columns-2 {
+			display: flex;
+			justify-content: space-between;
+			@include reader {
+				flex-direction: column;
+			}
+			.hs-form-field {
+				width: calc(50% - 5px);
+				@include reader {
+					width: 100%;
+					margin: 0 0 10px 0;
+				}
+			}
+		}
+		label {
+			display: inline-block;
+			margin: 0 0 3px 0;
+			span {
+				line-height: 1.3;
+				font-family: sans-serif;
+				font-size: 14px;
+				color: #fff;
+			}
+		}
+		.input {
+			margin: 0;
+		}
+		input {
+			width: -webkit-fill-available;
+			width: -moz-available;
+			display: inline-block;
+			padding: 10px;
+			height: 20px;
+			border: none;
+			float: none;
+		}
+		input[type="checkbox"] {
+			width: 22px;
+			@include reader {
+				width: unset;
+			}
+		}
+		.hs-form-field {
+			float: none;
+		}
+	}
+	p {
+		font-family: sans-serif;
+		font-size: 13px;
+		line-height: 1.5;
+		color: #fff;
+		margin: 15px 0;
+	}
+	.inputs-list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	.hs-form-booleancheckbox-display {
+		display: flex;
+		justify-content: space-between;
+		span {
+			margin: 0 0 0 10px;
+			text-align: left;
+		}
+	}
+	.legal-consent-container {
+		margin: 10px 0 0;
+		text-align: center;
+		@include reader {
+			margin: 20px 0 0;
+		}
+		fieldset {
+			input {
+				width: unset;
+			}
+		}
+	}
+	.hs_submit {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		input {
+			margin: 0 auto;
+			display: block;
+			width: 175px;
+			outline: 0;
+			border: 1px solid #fff;
+			background-color: transparent;
+			color: #fff;
+			height: 40px;
+			font-family: sans-serif;
+			font-size: 12px;
+			text-transform: uppercase;
+			cursor: pointer;
+			&:hover, &:focus {
+				color: $teal;
+				background-color: #fff;
+
+			}
+		}
+	}
+	.hs_error_rollup {
+		margin: 0 auto 15px;
+	}
+	.hs-error-msg, 
+	.hs-error-msgs label {
+		font-family: sans-serif;
+		font-size: 13px;
+		font-weight: bold;
+		margin: 5px 0 0;
+    	color: #ff917d;
+	}
+}
