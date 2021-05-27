@@ -1,0 +1,147 @@
+@import '../includes/_variables.scss';
+@import '../includes/_mixins.scss';
+
+.registration {
+    padding: 50px 0;
+    @include reader {
+        padding: 40px 0;
+    }
+    &__container {
+        width: 95%;
+        max-width: 1200px;
+        margin: 0 auto;
+        @include reader {
+            width: calc(100% - 50px);
+        }
+    }
+    &__subheader {
+        text-align: center;
+        color: #474747;
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+        width: 65%;
+        margin: 0 auto 20px;
+        @include tablet {
+            width: 75%;
+        }
+        @include reader {
+            width: 100%;
+            font-size: 16px;
+        }
+        &.subheader__bottom {
+            color: $light-teal;
+            font-weight: 600;
+            font-size: 22px;
+            @include tablet {
+                font-size: 18px;
+            }
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px auto;
+        max-width: 1000px;
+        @include tablet {
+            flex-direction: column;
+        }
+        @include reader {
+            margin: 40px auto 0;
+        }
+    }
+    &__tier {
+        width: 30%;
+        text-align: center;
+        @include tablet {
+            width: 32%;
+            margin: 0 auto 25px;
+        }
+        @include reader {
+            width: 100%;
+            max-width: 270px;
+        }
+    }
+    &__img-container {
+        width: 120px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    &__tier-name, 
+    &__tier-price, 
+    &__tier-description {
+        color: #474747;
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 0;
+    }
+    &__tier-name {
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $light-teal;
+        margin: 10px auto 0;
+        @include tablet {
+            font-size: 18px;
+        }
+    }
+    &__tier-price {
+        color: $light-teal;
+        font-size: 20px;
+        @include tablet {
+            font-size: 18px;
+        }
+    }
+    &__tier-description {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 1.5;
+        @include tablet {
+            width: 100%;
+        }
+    }
+    &__cta-link {
+        width: 230px;
+        margin: 0 auto;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        @include tablet {
+            width: 220px;
+        }
+        &:hover, 
+        &:focus {
+            .registration__cta {
+                color: $teal;
+                background-color: #fff;
+            }
+        }
+    }
+    &__cta {
+        width: 100%;
+        padding: 25px 0;
+        display: block;
+        margin: 0 auto;
+        outline: 0;
+        border: none;
+        color: #fff;
+        border: 2px solid $teal;
+        background-color: $teal;
+        font-family: sans-serif;
+        font-size: 17px;
+        text-transform: uppercase;
+        cursor: pointer;
+        @include tablet {
+            padding: 15px 0;
+            font-size: 16px;
+        }
+        @include reader {
+            font-size: 12px;
+        }
+    }
+}

@@ -19,7 +19,7 @@ const Seo = () => {
 							image {
 								childImageSharp {
 									fluid {
-										originalImg
+										src
 									}
 								}
 							}
@@ -35,7 +35,7 @@ const Seo = () => {
 					<title>{data.markdownRemark.frontmatter.title}</title>
 					<meta name="description" content={data.markdownRemark.frontmatter.description} />
 					<meta name="image" 
-						content={`${origin}${data.markdownRemark.frontmatter.image.childImageSharp.fluid.originalImg}`} 
+						content={`${origin}${data.markdownRemark.frontmatter.image.childImageSharp.fluid.src}`} 
 					/>
 					<link rel="canonical" href={data.markdownRemark.frontmatter.siteUrl} />
 
@@ -44,7 +44,7 @@ const Seo = () => {
 					<meta property="og:title" content={data.markdownRemark.frontmatter.title} />
 					<meta property="og:description" content={data.markdownRemark.frontmatter.description} />
 					<meta name="og:image" 
-						content={`${origin}${data.markdownRemark.frontmatter.image.childImageSharp.fluid.originalImg}`} 
+						content={`${origin}${data.markdownRemark.frontmatter.image.childImageSharp.fluid.src}`} 
 					/>
 
 					{/* Twitter Card tags */}
@@ -53,7 +53,7 @@ const Seo = () => {
 					<meta name="twitter:title" content={data.markdownRemark.frontmatter.title} />
 					<meta name="twitter:description" content={data.markdownRemark.frontmatter.description} />
 					<meta name="twitter:image" 
-						content={`${origin}${data.markdownRemark.frontmatter.image.childImageSharp.fluid.originalImg}`} 
+						content={`${origin}${data.markdownRemark.frontmatter.image.childImageSharp.fluid.src}`} 
 					/>
 					<meta name="twitter:image:width" content="800" />
 					<meta name="twitter:image:height" content="400" />

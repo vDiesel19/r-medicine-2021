@@ -17,6 +17,7 @@ import './src/styles/components/section-header.scss';
 import './src/styles/components/sponsors.scss';
 import './src/styles/components/organizers.scss';
 import './src/styles/components/schedule.scss';
+import './src/styles/components/registration-info.scss';
 import './src/styles/components/products.scss';
 import './src/styles/components/abstract-form.scss';
 import './src/styles/components/cc-modal.scss';
