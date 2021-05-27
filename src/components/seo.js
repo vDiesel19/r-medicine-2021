@@ -51,7 +51,7 @@ const Seo = () => {
 					<meta name="twitter:card" content="summary_large_image" />
 					<meta name="twitter:creator" content={data.markdownRemark.frontmatter.author} />
 					<meta name="twitter:title" content={data.markdownRemark.frontmatter.title} />
-					<meta name="twitter:description" content={data.markdownRemark.frontmatter.description} />
+					<meta name="twitter:description" content={data.markdownRemark.frontmatter.cardSummary} />
 					<meta name="twitter:image" 
 						content={`${origin}${data.markdownRemark.frontmatter.image.childImageSharp.fluid.src}`} 
 					/>
