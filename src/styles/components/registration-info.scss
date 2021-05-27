@@ -80,13 +80,12 @@
         margin: 0;
     }
     &__tier-name {
-        font-size: 22px;
-        text-transform: uppercase;
+        font-size: 24px;
         font-weight: 600;
         color: $light-teal;
         margin: 10px auto 0;
         @include tablet {
-            font-size: 18px;
+            font-size: 22px;
         }
     }
     &__tier-price {

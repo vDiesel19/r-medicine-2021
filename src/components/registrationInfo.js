@@ -42,7 +42,7 @@ const RegistrationInfo = () => {
 									</div>
 									<p className="registration__tier-name">{fee.tier}</p>
 									<p className="registration__tier-price">{fee.price}</p>
-									<p className="registration__tier-description">{fee.description}</p>
+									<p className="registration__tier-description">{parse(fee.description)}</p>
 								</div>
 							);
 						})}

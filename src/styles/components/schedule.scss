@@ -55,12 +55,13 @@
     }
     &__day-of-week {
         position: relative;
-        padding: 15px 0;
+        padding: 25px 0;
         text-align: center;
         margin: 0 0 8px 0;
         @include reader {
             background-color: #1B959F;
             margin: 0;
+            padding: 15px 0;
         }
         p {
             margin: 0;
@@ -70,6 +71,10 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
+            display: none;
+            @include reader {
+                display: block;
+            }
         }
     }
     &__arrow {
