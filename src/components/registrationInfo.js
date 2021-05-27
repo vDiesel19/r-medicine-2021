@@ -1,7 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import parse from 'html-react-parser';
-import icon from '../assets/academic_tier_icon.svg';
 
 const RegistrationInfo = () => {
 	return (
