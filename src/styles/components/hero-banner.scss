@@ -27,7 +27,7 @@
             bottom: 20%;
         }
         @include mobile {
-            bottom: 7%;
+            bottom: 5%;
         }
     }
     &__content {
@@ -60,6 +60,7 @@
         }
         @include mobile {
             font-size: 26px;
+            margin: 8px auto;
         }
     }
     &__text {
@@ -79,6 +80,9 @@
         display: flex;
         justify-content: space-between;
         width: fit-content;
+        @include mobile {
+            margin: 15px auto 0;
+        }
     }
     &__cta-link {
         color: #fff;
