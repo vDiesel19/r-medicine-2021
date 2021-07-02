@@ -19,6 +19,7 @@ const Schedule = () => {
 								day_week
 								date
 								event_line_1
+								events
 								event_line_2
 							}
 						}
