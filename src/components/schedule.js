@@ -1,6 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import arrow from '../assets/arrow.svg';
+import parse from 'html-react-parser';
 
 const Schedule = () => {
 
@@ -42,8 +43,13 @@ const Schedule = () => {
 									<div className="schedule__events">
 										<p className="schedule__day">{schedule.date}</p>
 										<ul>
-											<li>{schedule.event_line_1}</li>
-											<li>{schedule.event_line_2}</li>
+											<li className="schedule__event-header">{schedule.event_line_1}</li>
+											{schedule.events.map(event => {
+												return (
+													<li className="schedule__event-title">{parse(event)}</li>
+												);
+											})}
+											<li className="schedule__event-header">{schedule.event_line_2}</li>
 										</ul>
 									</div>
 								</div>
