@@ -29,6 +29,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 8px;
+        overflow-y: hidden;
         @include reader {
             width: calc(100% - 50px);
             grid-template-columns: repeat(1, 1fr);
@@ -55,7 +56,7 @@
     }
     &__day-of-week {
         position: relative;
-        padding: 25px 0;
+        padding: 15px 0;
         text-align: center;
         margin: 0 0 8px 0;
         @include reader {
@@ -63,18 +64,23 @@
             margin: 0;
             padding: 15px 0;
         }
-        p {
-            margin: 0;
-            color: #fff;
-            font-family: sans-serif;
-            font-size: 18px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            display: none;
+        .schedule__day {
             @include reader {
-                display: block;
+                display: none;
             }
+        }
+    }
+    &__date {
+        margin: 0;
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: none;
+        @include reader {
+            display: block;
         }
     }
     &__arrow {
@@ -99,18 +105,17 @@
     }
     &__events {
         padding: 20px;
-        height: 170px;
-        overflow-y: scroll;
+        height: 100%;
         @include reader {
             display: none;
             height: auto;
             margin-top: 8px;
         }
-        p {
-            color: #025c63;
-            font-family: sans-serif;
-            font-size: 28px;
-            margin: 0 0 15px 0;
+        .schedule__day {
+            display: none;
+            @include reader {
+                display: block;
+            }
         }
         ul {
             list-style-type: none;
@@ -140,6 +145,15 @@
                     color: #fff;
                 }
             }
+        }
+    }
+    &__day {
+        color: #025c63;
+        font-family: sans-serif;
+        font-size: 28px;
+        margin: 0;
+        @include reader {
+            margin: 0 0 15px 0;
         }
     }
 }

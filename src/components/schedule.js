@@ -35,7 +35,8 @@ const Schedule = () => {
 							return (
 								<div className="schedule__content" onClick={(e) => toggleSchedule(e)} role="button" tabIndex="0" key={schedule.day_week}>
 									<div className="schedule__day-of-week">
-										<p>{schedule.day_week}</p>
+										<p className="schedule__date">{schedule.day_week}</p>
+										<p className="schedule__day">{schedule.date}</p>
 										<button className="schedule__arrow">
 											<img src={arrow} alt="" />
 										</button>
