@@ -9,7 +9,7 @@ const Abstract = () => {
 		<div>
 			<Header />
 			<div className="abstract">
-				<h1>Submit An Abstract</h1>
+				<h1>Abstract Submission is now closed.</h1>
 				<div className="abstract__top">
 					<p className="abstract__top-subheader">Welcome to the R/Medicine 2021 Abstract submissions form! We welcome proposals for the following types of sessions:</p>
 					<ol>
