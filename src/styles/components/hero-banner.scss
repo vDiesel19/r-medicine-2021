@@ -27,7 +27,7 @@
             bottom: 20%;
         }
         @include mobile {
-            bottom: 5%;
+            bottom: 14%;
         }
     }
     &__content {
@@ -111,10 +111,6 @@
         @include reader {
             width: 190px;
             font-size: 14px
-        }
-        @include mobile {
-            width: 150px;
-            font-size: 12px;
         }
 		&:hover,
 		&:focus {

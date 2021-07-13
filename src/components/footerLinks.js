@@ -11,9 +11,6 @@ const FooterLinks = () => {
 						<a href="https://www.cvent.com/d/gjq6c5/4W?ct=50221cf5-5496-4c34-9ec0-3b52b1bf1204" target="_blank" rel="noreferrer">Register</a>
 					</li>
 					<li>
-						<Link to="/abstract/">Abstract Submission</Link>
-					</li>
-					<li>
 						<Link to="/about/">About</Link>
 					</li>
 					<li>
