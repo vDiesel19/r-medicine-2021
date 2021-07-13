@@ -246,7 +246,7 @@ const AbstractForm = ({ zones }) => {
 				<p className="abstract__form-subheader">Please read the <a href="/code-of-conduct" target="_blank">R/Medicine Code of Conduct.</a></p>
 				<div className="abstract__field-group field-group--checkbox">
 					<label htmlFor="code_conduct">
-						<input type="checkbox" id="code_conduct" name="code_conduct" onClick={(e) => enableSubmit(e)} />
+						<input type="checkbox" id="code_conduct" name="code_conduct" />
 						I agree to abide by the Linux Foundation Code of Conduct.<span>*</span>
 					</label>
 				</div>
