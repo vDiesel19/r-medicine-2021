@@ -2,7 +2,6 @@ import React from 'react';
 import { StaticQuery, Link, graphql } from 'gatsby';
 import desktopBanner from '../assets/homepage_hero_desktop_2.jpg';
 import tabletBanner from '../assets/homepage_hero_tablet.jpg';
-import parse from 'html-react-parser';
 
 const HeroBanner = () => {
 	return (
@@ -14,6 +13,7 @@ const HeroBanner = () => {
 							heroheader_line_1
 							heroheader_line_2
 							herosubheader
+							herotext
 						}
 					}
 				}
@@ -24,6 +24,7 @@ const HeroBanner = () => {
 						<div className="hero-banner__content">
 							<h1 className="hero-banner__header">{data.markdownRemark.frontmatter.heroheader_line_1}<br /><span>{data.markdownRemark.frontmatter.heroheader_line_2}</span></h1>
 							<p className="hero-banner__subheader">{data.markdownRemark.frontmatter.herosubheader}</p>
+							<p className="hero-banner__text">{data.markdownRemark.frontmatter.herotext}</p>
 							<div className="hero-banner__buttons">
 								<a className="hero-banner__cta-link" href="https://www.cvent.com/d/gjq6c5/4W?ct=50221cf5-5496-4c34-9ec0-3b52b1bf1204" target="_blank" rel="noreferrer">
 									<button className="hero-banner__cta" type="text">
