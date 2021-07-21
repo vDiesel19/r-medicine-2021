@@ -12,6 +12,7 @@ const RegistrationInfo = () => {
 							text_section_1
 							text_section_2
 							text_section_3
+							text_section_4
 							fees {
 								image {
 									childImageSharp {
@@ -51,6 +52,12 @@ const RegistrationInfo = () => {
 						<a className="registration__cta-link" href="https://www.cvent.com/d/gjq6c5/4W?ct=50221cf5-5496-4c34-9ec0-3b52b1bf1204" target="_blank" rel="noreferrer">
 							<button className="registration__cta" type="text">
 								Register
+							</button>
+						</a>
+						<p className="registration__subheader subheader__bottom subheader__last">{data.markdownRemark.frontmatter.text_section_4}</p>
+						<a className="registration__cta-link" href="https://www.r-consortium.org/r-medicine-diversity-equity-inclusion-scholarship" target="_blank" rel="noreferrer">
+							<button className="registration__cta" type="text">
+								Apply
 							</button>
 						</a>
 					</div>

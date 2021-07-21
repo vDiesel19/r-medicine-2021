@@ -33,8 +33,15 @@
             color: $light-teal;
             font-weight: 600;
             font-size: 22px;
+            line-height: 1.4;
             @include tablet {
                 font-size: 18px;
+            }
+        }
+        &.subheader__last {
+            margin: 40px auto 20px;
+            @include reader {
+                margin: 25px auto 20px;
             }
         }
     }

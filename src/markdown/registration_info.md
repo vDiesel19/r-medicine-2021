@@ -16,4 +16,5 @@ fees:
    price: $10 USD
    description: Student/Trainee registrations are for participants who are currently in training, including graduate and medical students, residents, and fellows. 
 text_section_3: Click here to Register for the conference!
+text_section_4: Click here to apply for the R/Medicine Diversity, Equity, and Inclusion Scholarship.
 ---
