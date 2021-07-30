@@ -1,5 +1,4 @@
 ---
-
 id: "organizers"
 organizing_committee:
     - name: Stephan Kadauke — Chair
