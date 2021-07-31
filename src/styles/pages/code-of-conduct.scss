@@ -34,10 +34,17 @@
         &:first-child {
             .code-conduct__header {
                 display: none;
+                &.virtual-speaker__header {
+                    display: block;
+                    border-bottom: none;
+                    padding: 0;
+                    margin: 0 auto 15px;
+                }
             }
         }
     }
-    &__header {
+    &__header, 
+    h3 {
         font-size: 23px;
         font-family: sans-serif;
         color: $teal;
@@ -47,7 +54,14 @@
     }
     &__text {
         margin: 0 auto 0;
-        p {
+        h3 {
+            font-size: 20px;
+            border-bottom: none;
+            padding: 0;
+            margin: 0 auto 15px;
+        }
+        p,
+        li {
             font-family: sans-serif;
             font-size: 18px;
             line-height: 1.6;
@@ -56,6 +70,10 @@
             @include reader {
                 font-size: 16px;
             }
+        }
+        li {
+            line-height: 1.4;
+            margin: 0 auto 15px;
         }
     }
 }

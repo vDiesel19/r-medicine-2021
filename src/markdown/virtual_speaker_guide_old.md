@@ -1,9 +1,9 @@
 ---
-id: 'virtual-speaker-training'
+id: "virtual-speaker-guide-old"
 header_1: Virtual Speaker Guide
 sections:
-    - header_2: Welcome!
-      text_1: '<p>We are excited to welcome you as a speaker for R/Medicine 2021. As a reminder, the event will take place virtually Tuesday, August 24-27, during Eastern Daylight Time. Please click through the tabs on this page to access information.</p>'
+		- header_2: Welcome!
+			text_1: '<p>We are excited to welcome you as a speaker for R/Medicine 2021. As a reminder, the event will take place virtually Tuesday, August 24-27, during Eastern Daylight Time. Please click through the tabs on this page to access information.</p>'
 			list_items: ''
 			sub_section: ''
 			text_2: ''
@@ -34,6 +34,9 @@ sections:
 			text_2: ''
 		- header_2: Pre-recording Information & Tools
 			text_1: '<p>All speakers may pre-record their talk, which will be played through the event platform. <span>Speakers who will give a lightning talk must submit a pre-recorded video.</span></p><p>Some suggested tools to use for recording are Quicktime, Zoom, a screen recorder, or something similar. The recording should show your slides or screen and optionally yourself, using a picture in picture style format. The preferred format is MP4 however any common formats is acceptable. Please share the actual video file, not a link to a streaming service like YouTube or Vimeo. Please feel free to reach out with any questions.</p>'
+			list_items: ''
+			sub_section: ''
+			text_2: ''
 		- header_2: Uploading Instructions for Posters and Pre-recorded Sessions
 			text_1: '<p>Please upload your poster or presentation using this <a href="https://forms.gle/bM5cAWSSnYcJDczN8" target="_blank">Google Form</a>.</p><p><span>Submissions need to be received no later than Friday, August 20.</span></p>'
 			list_items: ''
@@ -46,6 +49,9 @@ sections:
 			text_2: ''
 		- header_2: Speaker Training
 			text_1: '<p>More information on speaker training will be provided shortly.</p>'
+			list_items: ''
+			sub_section: ''
+			text_2: ''
 		- header_2: Technical Tips for Virtual Presentations
 			text_1: ''
 			list_items:
@@ -82,5 +88,37 @@ sections:
 						- 'Manage noise by turning off fans, phones, or speakers and keep ambient noise to a minimum.'
 						- 'Do not touch the microphone while unmuted'
 				- header_3: Dress Code
-			text_2: '<p>There is no dress code for presentations, and we encourage you to be comfortable. That said, you must be aware that the <a href="/code-of-conduct/">Code of Conduct</a> applies to this space, both in terms of what you show on camera and what you say. We ask that you be tasteful and considerate in choosing your clothing and surroundings. Keep in mind that we are a global community. Please refrain from wearing shirts with global brand logos that are not your own. Solid colors (not white) also work best instead of prints.</p>'			
+			text_2: '<p>There is no dress code for presentations, and we encourage you to be comfortable. That said, you must be aware that the <a href="/code-of-conduct/">Code of Conduct</a> applies to this space, both in terms of what you show on camera and what you say. We ask that you be tasteful and considerate in choosing your clothing and surroundings. Keep in mind that we are a global community. Please refrain from wearing shirts with global brand logos that are not your own. Solid colors (not white) also work best instead of prints.</p>'
+		- header_2: Tips to Keep Your Virtual Audience Engaged
+			text_1: ''
+			list_items:
+				- '<span>Learn the Content</span>: Familiarity with the content allows a speaker to focus on presenting, rather than trying to remember the points to make. To minimize worry about forgetting elements of the presentation, include notes in your presentation file and have a printout of your script or talking points.'
+				- '<span>Practice Makes Perfect</span>: Speakers should practice their content delivery in the environment in which they will deliver it, such as in front of a computer. Presenting alone to a computer can be awkward at first. To make speakers more comfortable, ask colleagues, roommates, or family to sit in front so they can present to familiar faces.'
+				- '<span>Understand the Tools</span>: Speakers should understand and utilize the content options available to them, to maximize the effectiveness of the presentation technology. It's important to know the basic functions of the software, e.g. how to advance slides, manage Q&A or chats, before the presentation.
+				- '<span>Speak Up</span>: Check audio levels before presenting, but also make sure to breathe at regular intervals to speak audibly and clearly. Maintaining a clear, even tone throughout the presentation will allow the audience to hear it without adjusting their volume settings.'
+				- '<span>Look at Your Camera</span>: If presenting via video, remember, the webcam is your link to your audience. Make eye contact with the camera so it appears to the audience that you are speaking directly to them.'
+				- "<span>Don't Fear Mistakes</span>: Humans make mistakes, even during presentations. Realize that flubs happen and they won't derail your presentation – unless you let them. Just keep going in your planned presentation and remember, the audience is forgiving."
+				- "<span>Be Prepared</span>: During the presentation, have a glass of water nearby to sip as needed. Also, keep handy a printout of your slides or notes in case you need to refer to them."
+			sub_section: ''
+			text_2: 'From: <a href="https://www.inxpo.com/assets/pdfs/litepapers/How-To-Be-An-Engaging-Speaker.pdf" target="_blank">https://www.inxpo.com/assets/pdfs/litepapers/How-To-Be-An-Engaging-Speaker.pdf</a>'
+		- header_2: Inclusive Speaker Orientation Online Course
+			text_1: 'The Linux Foundation, in collaboration with the National Center for Women in Technology (NCWIT), has created an <a href="https://training.linuxfoundation.org/content/inclusive-speaker-orientation" target="_blank">online course</a> designed to teach the viewer about inclusion, diversity, and unconscious bias. We highly recommend all of our speakers ,,<a href="https://training.linuxfoundation.org/content/inclusive-speaker-orientation" target="_blank">watch the course</a> to learn tips/tools to use when speaking to encourage inclusivity in presentations and messaging.'
+			list_items: ''
+			sub_section: ''
+			text_2: ''
+		- header_2: Code of Conduct
+			text_1: '<p>Please read and abide by our code of conduct, which can be found <a href="/code-of-conduct/">here</a>. We ask that speakers especially review this code of conduct and are inclusive in the **words and images** used during their presentation.</p>'
+			list_items: ''
+			sub_section: ''
+			text_2: ''
+		- header_2: 'Additional Resources'
+			text_1: '<p><span><a href="https://www.cnet.com/how-to/best-gear-for-online-meetings-webcams-lights-mics-tripods-and-more/" target="_blank">Best Gear for Online Meetings</a></span> – Webcams, lights, mics, tripods and more</p><p><span><a href="https://www.greatspeech.co/video-presentations/#.XtFN_y_Mx-U">19 Video Presentation Tips</a></span> to help you give a great presentation (even if you hate the way you look on camera)</p><p><span><a href="https://pantheon.io/blog/tips-for-virtual-presentations" target="_blank">9 Tips for Giving Engaging Virtual Presentations</a></span> – This article gives 9 tips and within each tip has folks from the tech world giving their advice in a fun/relatable way.<p><span><a href="https://magneticspeaking.com/9-important-tips-for-virtual-presentations/" target="_blank">PACE Acronym for Virtual Presentations</a></span></p><p><span><a href="https://www.blueskyelearn.com/for-presenters-a-virtual-event-checklist/" target="_blank">Checklist for Speakers</a></span> – this article provides checklists applicable for speakers that are live streaming.</p>'
+			list_items: ''
+			sub_section: ''
+			text_2: ''
+		- header_2: Contact Us
+			text_1: '<p>If you have any other platform, speaker, or schedule-related questions, please contact us at <a href="mailto:r-medicine-conf@r-consortium.org">r-medicine-conf@r-consortium.org</a>.</p>'
+			list_items: ''
+			sub_section: ''
+			text_2: ''	
 ---
