@@ -5,6 +5,9 @@ const DesktopNav = () => {
 	return (
 		<nav className="desktop-nav">
 			<ul className="desktop-nav__link-list">
+				<li>
+					<Link className="desktop-nav__link-level-1" to="/virtual-speaker-guide">Speakers</Link>
+				</li>
 				<li className="desktop-nav__dropdown--wrapper">
 					<Link className="desktop-nav__link-level-1" to="/">Attend</Link>
 					<div className="desktop-nav__dropdown">
