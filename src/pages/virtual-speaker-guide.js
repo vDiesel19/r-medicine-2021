@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import arrow from '../assets/arrow_teal.svg';
+import posterPDF from '../assets/rmed_poster_sample.pdf';
 
 const VirtualSpeakerGuide = () => {
 
@@ -18,10 +19,10 @@ const VirtualSpeakerGuide = () => {
 					<div className="code-conduct__content">
                         <h2 className="code-conduct__header virtual-speaker__header">Welcome!</h2>
 						<div className="code-conduct__text">
-							<p>We are excited to welcome you as a speaker for R/Medicine 2021. As a reminder, the event will take place virtually Tuesday, August 24-27, during Eastern Daylight Time. Please click through the tabs on this page to access information.</p>
+							<p>This page is intended for folks who have had their abstract accepted for a poster presentation, lightning talk, or regular talk at R/Medicine 2021. Congratulations! We are excited to welcome you as a presenter. As a reminder, the event will take place virtually Tuesday, August 24-27, during Eastern Daylight Time. Please click through the tabs on this page to access information.</p>
 						</div>
 					</div>
-					<div className="code-conduct__content">
+					<div className="code-conduct__content is-active">
 						<div class="code-conduct__toggle-wrapper" onClick={(e) => toggleContent(e)}>
 							<h2 className="code-conduct__header">Deadlines</h2>
 							<button className="code-conduct__arrow">
@@ -31,25 +32,25 @@ const VirtualSpeakerGuide = () => {
 						<div className="code-conduct__text virtual-speaker__text">
 							<ul>
 								<li><span>Poster Submission Due Date:</span> Friday, August 20</li>
-								<li><span>Pre-Recording Video Submission Due Date</span> (mandatory for lightning talks): Friday, August 20</li>
+								<li><span>Pre-Recording Video Submission Due Date</span> (mandatory for lightning talks, optional for regular talks): Friday, August 20</li>
 								<li><span>Speaker Training</span> (for all who will present live): TBD</li>
 								<li><span>Event Dates:</span> Tuesday, August 24 – Friday, August 27</li>
 								<li><span>Timezone:</span> Eastern Daylight Time</li>
 							</ul>
 						</div>
 					</div>
-					<div className="code-conduct__content">
+					<div className="code-conduct__content is-active">
 						<div class="code-conduct__toggle-wrapper" onClick={(e) => toggleContent(e)}>
-							<h2 className="code-conduct__header">Schedule, Timing &amp; Speaker Profiles</h2>
+							<h2 className="code-conduct__header">Schedule and Timing</h2>
 							<button className="code-conduct__arrow">
 								<img src={arrow} alt="" />
 							</button>
 						</div>
 						<div className="code-conduct__text virtual-speaker__text">
-							<p>The schedule will be posted on the R/Medicine web site by Monday, August 2.</p><p>All lightning talks are ten (10) minutes in total.</p><p>All regular talks are twenty (20) minutes in total.</p><p>Please confirm your timing on the R/Medicine website schedule when it is posted on Monday, August 2.</p>
+							<p>The schedule will be posted on the R/Medicine web site by Wednesday, August 4th.</p><p>All lightning talks are ten (10) minutes in total.</p><p>All regular talks are twenty (20) minutes in total.</p>
 						</div>
 					</div>
-					<div className="code-conduct__content">
+					<div className="code-conduct__content is-active">
 						<div class="code-conduct__toggle-wrapper" onClick={(e) => toggleContent(e)}>
 							<h2 className="code-conduct__header">Platform &amp; Specifications</h2>
 							<button className="code-conduct__arrow">
@@ -61,7 +62,7 @@ const VirtualSpeakerGuide = () => {
 							<p>Posters will be presented on SpatialChat, a platform that allows participants to interact as video and audio-enabled avatars in a virtual room. To move within a room, use your mouse and drag your avatar to a new location. Avatars who are close to each other can hear one another, so much like in real life, you hear people who are close to you but not those who are further away. To get a better sense of this experience, you can test SpatialChat <a href="https://spatial.chat/s/rmed21test" target="_blank" rel="noreferrer">here.</a></p>
 						</div>
 					</div>
-					<div className="code-conduct__content">
+					<div className="code-conduct__content is-active">
 						<div class="code-conduct__toggle-wrapper" onClick={(e) => toggleContent(e)}>
 							<h2 className="code-conduct__header">Poster Information</h2>
 							<button className="code-conduct__arrow">
@@ -69,10 +70,10 @@ const VirtualSpeakerGuide = () => {
 							</button>
 						</div>
 						<div className="code-conduct__text virtual-speaker__text">
-							<p>Posters should be in landscape format and should be uploaded as a single PDF file. The recommended poster size is A0 (118 x 84 cm), with the title in size 100 font. An example can be found <a href="" target="_blank" rel="noreferrer">here</a></p>
+							<p>Posters should be in landscape format and should be uploaded as a single PDF file. The recommended poster size is A0 (118 x 84 cm), with the title in size 100 font. An example can be found <a href={posterPDF} target="_blank" rel="noreferrer">here</a>.</p>
 						</div>
 					</div>
-					<div className="code-conduct__content">
+					<div className="code-conduct__content is-active">
 						<div class="code-conduct__toggle-wrapper" onClick={(e) => toggleContent(e)}>
 							<h2 className="code-conduct__header">Pre-recording Information &amp; Tools</h2>
 							<button className="code-conduct__arrow">
@@ -80,11 +81,11 @@ const VirtualSpeakerGuide = () => {
 							</button>
 						</div>
 						<div className="code-conduct__text virtual-speaker__text">
-							<p>All speakers may pre-record their talk, which will be played through the event platform. <span>Speakers who will give a lightning talk must submit a pre-recorded video.</span></p>
-							<p>Some suggested tools to use for recording are Quicktime, Zoom, a screen recorder, or something similar. The recording should show your slides or screen and optionally yourself, using a picture in picture style format. The preferred format is MP4 however any common formats is acceptable. Please share the actual video file, not a link to a streaming service like YouTube or Vimeo. Please feel free to reach out with any questions.</p>
+							<p>All speakers may pre-record their talk, which will be played through the event platform. <span>Speakers who will give a lightning talk must submit a pre-recorded talk.</span></p>
+							<p>Some suggested tools to use for recording are Quicktime, Zoom, a screen recorder, or something similar. The recording should show your slides or screen and optionally yourself, using a picture in picture style format. Please feel free to <a href="mailto:r-medicine-conf@r-consortium.org">reach out</a> with any questions.</p>
 						</div>
 					</div>
-					<div className="code-conduct__content">
+					<div className="code-conduct__content is-active">
 						<div class="code-conduct__toggle-wrapper" onClick={(e) => toggleContent(e)}>
 							<h2 className="code-conduct__header">Uploading Instructions for Posters and Pre-recorded Sessions</h2>
 							<button className="code-conduct__arrow">
@@ -95,7 +96,7 @@ const VirtualSpeakerGuide = () => {
 							<p>Please upload your poster or presentation using this <a href="https://forms.gle/bM5cAWSSnYcJDczN8" target="_blank" rel="noreferrer">Google Form</a>.</p><p><span>Submissions need to be received no later than Friday, August 20.</span></p>
 						</div>
 					</div>
-					<div className="code-conduct__content">
+					<div className="code-conduct__content is-active">
 						<div class="code-conduct__toggle-wrapper" onClick={(e) => toggleContent(e)}>
 							<h2 className="code-conduct__header">Live Q&amp;A</h2>
 							<button className="code-conduct__arrow">
@@ -107,7 +108,7 @@ const VirtualSpeakerGuide = () => {
 							<p>If you are concerned about your timezone and how that could impact the live Q&amp;A portion of your session, we will do our best to reschedule your session slot to a time that is convenient for you.</p>
 						</div>
 					</div>
-					<div className="code-conduct__content">
+					<div className="code-conduct__content is-active">
 						<div class="code-conduct__toggle-wrapper" onClick={(e) => toggleContent(e)}>
 							<h2 className="code-conduct__header">Speaker Training</h2>
 							<button className="code-conduct__arrow">
@@ -118,7 +119,7 @@ const VirtualSpeakerGuide = () => {
 							<p>More information on speaker training will be provided shortly.</p>
 						</div>
 					</div>
-					<div className="code-conduct__content">
+					<div className="code-conduct__content is-active">
 						<div class="code-conduct__toggle-wrapper" onClick={(e) => toggleContent(e)}>
 							<h2 className="code-conduct__header">Technical Tips for Virtual Presentations</h2>
 							<button className="code-conduct__arrow">
@@ -139,7 +140,7 @@ const VirtualSpeakerGuide = () => {
 							<p>From: <a href="https://www.greatspeech.co/video-presentations/" target="_blank" rel="noreferrer">https://www.greatspeech.co/video-presentations/</a></p>
 						</div>
 					</div>
-					<div className="code-conduct__content">
+					<div className="code-conduct__content is-active">
 						<div class="code-conduct__toggle-wrapper" onClick={(e) => toggleContent(e)}>
 							<h2 className="code-conduct__header">Lighting, Webcam and Microphone Best Practices</h2>
 							<button className="code-conduct__arrow">
@@ -172,7 +173,7 @@ const VirtualSpeakerGuide = () => {
 							<p>There is no dress code for presentations, and we encourage you to be comfortable. That said, you must be aware that the <a href="/code-of-conduct/">Code of Conduct</a> applies to this space, both in terms of what you show on camera and what you say. We ask that you be tasteful and considerate in choosing your clothing and surroundings. Keep in mind that we are a global community. Please refrain from wearing shirts with global brand logos that are not your own. Solid colors (not white) also work best instead of prints.</p>
 						</div>
 					</div>
-					<div className="code-conduct__content">
+					<div className="code-conduct__content is-active">
 						<div class="code-conduct__toggle-wrapper" onClick={(e) => toggleContent(e)}>
 							<h2 className="code-conduct__header">Live Q&amp;A</h2>
 							<button className="code-conduct__arrow">
@@ -192,7 +193,7 @@ const VirtualSpeakerGuide = () => {
 							<p>From: <a href="https://www.inxpo.com/assets/pdfs/litepapers/How-To-Be-An-Engaging-Speaker.pdf" target="_blank" rel="noreferrer">https://www.inxpo.com/assets/pdfs/litepapers/How-To-Be-An-Engaging-Speaker.pdf</a></p>
 						</div>
 					</div>
-					<div className="code-conduct__content">
+					<div className="code-conduct__content is-active">
 						<div class="code-conduct__toggle-wrapper" onClick={(e) => toggleContent(e)}>
 							<h2 className="code-conduct__header">Inclusive Speaker Orientation Online Course</h2>
 							<button className="code-conduct__arrow">
@@ -203,7 +204,7 @@ const VirtualSpeakerGuide = () => {
 							<p>The Linux Foundation, in collaboration with the National Center for Women in Technology (NCWIT), has created an <a href="https://training.linuxfoundation.org/content/inclusive-speaker-orientation" target="_blank" rel="noreferrer">online course</a> designed to teach the viewer about inclusion, diversity, and unconscious bias. We highly recommend all of our speakers, <a href="https://training.linuxfoundation.org/content/inclusive-speaker-orientation" target="_blank" rel="noreferrer">watch the course</a> to learn tips/tools to use when speaking to encourage inclusivity in presentations and messaging.</p>
 						</div>
 					</div>
-					<div className="code-conduct__content">
+					<div className="code-conduct__content is-active">
 						<div class="code-conduct__toggle-wrapper" onClick={(e) => toggleContent(e)}>
 							<h2 className="code-conduct__header">Code of Conduct</h2>
 							<button className="code-conduct__arrow">
@@ -214,7 +215,7 @@ const VirtualSpeakerGuide = () => {
 							<p>Please read and abide by our code of conduct, which can be found <a href="/code-of-conduct/">here</a>. We ask that speakers especially review this code of conduct and are inclusive in the <span>words and images</span> used during their presentation.</p>
 						</div>
 					</div>
-					<div className="code-conduct__content">
+					<div className="code-conduct__content is-active">
 						<div class="code-conduct__toggle-wrapper" onClick={(e) => toggleContent(e)}>
 							<h2 className="code-conduct__header">Additional Resources</h2>
 							<button className="code-conduct__arrow">
@@ -229,7 +230,7 @@ const VirtualSpeakerGuide = () => {
 							<p><span><a href="https://www.blueskyelearn.com/for-presenters-a-virtual-event-checklist/" target="_blank" rel="noreferrer">Checklist for Speakers</a></span> – this article provides checklists applicable for speakers that are live streaming.</p>
 						</div>
 					</div>
-					<div className="code-conduct__content">
+					<div className="code-conduct__content is-active">
 						<div class="code-conduct__toggle-wrapper" onClick={(e) => toggleContent(e)}>
 							<h2 className="code-conduct__header">Contact Us</h2>
 							<button className="code-conduct__arrow">
