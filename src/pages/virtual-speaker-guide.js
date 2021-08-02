@@ -82,7 +82,7 @@ const VirtualSpeakerGuide = () => {
 						</div>
 						<div className="code-conduct__text virtual-speaker__text">
 							<p>All speakers may pre-record their talk, which will be played through the event platform. <span>Speakers who will give a lightning talk must submit a pre-recorded talk.</span></p>
-							<p>Some suggested tools to use for recording are Quicktime, Zoom, a screen recorder, or something similar. The recording should show your slides or screen and optionally yourself, using a picture in picture style format. Please feel free to <a href="mailto:r-medicine-conf@r-consortium.org">reach out</a> with any questions.</p>
+							<p>Some suggested tools to use for recording are Quicktime, Zoom, a screen recorder, or something similar. The recording should show your slides or screen and optionally yourself, using a picture in picture style format. <span>Please share the actual video file, in MP4 format, not a link to a streaming service such as YouTube or Vimeo.</span> Please feel free to <a href="mailto:r-medicine-conf@r-consortium.org">reach out</a> with any questions.</p>
 						</div>
 					</div>
 					<div className="code-conduct__content is-active">
