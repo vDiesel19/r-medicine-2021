@@ -211,10 +211,10 @@ export const SCHEDULES = [
 			},
 			{
 				time: '13:17 - 13:27',
-				title: 'Robert Lobato',
+				title: 'R and Shiny Dashboards Facilitate Quality Improvement in Anesthesiology and Perioperative Care',
 				speakers: [
 					{
-						name: 'R and Shiny Dashboards Facilitate Quality Improvement in Anesthesiology and Perioperative Care',
+						name: 'Robert Lobato',
 						link: '',
 						imageUrl: lobato
 					}
@@ -222,10 +222,10 @@ export const SCHEDULES = [
 			},
 			{
 				time: '13:29 - 13:39',
-				title: 'Francisco Requena',
+				title: 'Building an Interpretable ML Model API for Interpretation of CNVs in Patients with Rare Diseases',
 				speakers: [
 					{
-						name: 'Building an Interpretable ML Model API for Interpretation of CNVs in Patients with Rare Diseases',
+						name: 'Francisco Requena',
 						link: '',
 						imageUrl: requena
 					}
@@ -233,10 +233,10 @@ export const SCHEDULES = [
 			},
 			{
 				time: '14:11 - 14:31',
-				title: 'Timothy Keyes',
+				title: '{tidyTOF}: Building Pipelines to Predict Patient Outcomes from Single-cell Data',
 				speakers: [
 					{
-						name: '{tidyTOF}: Building Pipelines to Predict Patient Outcomes from Single-cell Data',
+						name: 'Timothy Keyes',
 						link: '',
 						imageUrl: keyes
 					}
@@ -244,10 +244,10 @@ export const SCHEDULES = [
 			},
 			{
 				time: '14:33 - 14:53',
-				title: 'David Miller',
+				title: '{GENETEX}: A GENomics Report TEXt Mining R Package to Capture Real-world Clinico-genomic Data',
 				speakers: [
 					{
-						name: '{GENETEX}: A GENomics Report TEXt Mining R Package to Capture Real-world Clinico-genomic Data',
+						name: 'David Miller',
 						link: '',
 						imageUrl: miller
 					}
@@ -255,10 +255,10 @@ export const SCHEDULES = [
 			},
 			{
 				time: '14:55 - 15:05',
-				title: 'Luke McGuinness',
+				title: 'Incorporating Risk-of-Bias Assessments into Evidence Syntheses with {robvis}',
 				speakers: [
 					{
-						name: 'Incorporating Risk-of-Bias Assessments into Evidence Syntheses with {robvis}',
+						name: 'Luke McGuinness',
 						link: '',
 						imageUrl: mcguinness
 					}

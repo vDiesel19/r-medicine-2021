@@ -11,15 +11,16 @@ const Workshop = (props) => {
             </div>
             <div className="workshop__content">
                 <h3 className="workshop__title">{title}</h3>
-                {speakers.map(speaker => {
-                    return (
-                        <Speaker
-                            name={speaker.name}
-                            link={speaker.link}
-                            imageUrl={speaker.imageUrl}
-                        />
-                    );
-                })}
+                <div className="workshop__speakers">
+                    {speakers.map(speaker => {
+                        return (
+                            <Speaker
+                                name={speaker.name}
+                                imageUrl={speaker.imageUrl}
+                            />
+                        );
+                    })}
+                </div>
             </div> 
         </div>
     );

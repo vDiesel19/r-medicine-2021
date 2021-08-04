@@ -1,3 +1,66 @@
+@import '../includes/_variables.scss';
+@import '../includes/_mixins.scss';
+
 .workshop {
-    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    height: max-content;
+    background-color:#8bd3d9;
+    @include reader {
+        flex-direction: column;
+        text-align: center;
+    }
+    &__time-wrapper {
+        width: 20%;
+        text-align: center;
+        height: 100%;
+        @include reader {
+            width: 100%;
+            height: fit-content;
+            padding: 10px 0;
+        }
+    }
+    &__content {
+        width: 74%;
+        padding: 20px;
+        height: 100%;
+        border-left: 5px solid #fff;
+        @include reader {
+            width: calc(100% - 40px);
+            height: fit-content;
+            border-left: none;
+            border-top: 3px solid #fff;
+        }
+    }
+    &__title,
+    &__time {
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0 0 15px;
+        @include reader {
+            font-size: 16px;
+        }
+    }
+    &__time {
+        display: block;
+        height: 100%;
+        margin: 0;
+        line-height: 1.4;
+    }
+    &__title {
+        width: 90%;
+        line-height: 1.4;
+        @include reader {
+            width: 100%;
+        }
+    }
+    &__speakers {
+        display: flex;
+        @include reader {
+            justify-content: center;
+        }
+    }
 }

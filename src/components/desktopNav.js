@@ -13,6 +13,7 @@ const DesktopNav = () => {
 					<div className="desktop-nav__dropdown">
 						<a href="https://www.cvent.com/d/gjq6c5/4W?ct=50221cf5-5496-4c34-9ec0-3b52b1bf1204" target="_blank" rel="noreferrer">Register</a>
 						<Link to="/about/">About</Link>
+						<Link to="/schedule/">Schedule</Link>
 						<Link to="/code-of-conduct/">Code of Conduct</Link>
 					</div>
 				</li>

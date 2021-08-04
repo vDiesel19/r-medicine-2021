@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, Link, graphql } from 'gatsby';
 import arrow from '../assets/arrow.svg';
 import parse from 'html-react-parser';
 
@@ -57,6 +57,11 @@ const Schedule = () => {
 							);
 						})}
 					</div>
+					<Link className="schedule__cta-link" to="/schedule/">
+						<button className="schedule__cta" type="text">
+							View the Full Schedule
+						</button>
+					</Link>
 				</div>
 		  	)}
 		/>
