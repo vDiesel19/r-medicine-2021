@@ -1,3 +1,43 @@
+import adams from '../assets/speaker-photos/marcus_adams.jpeg';
+import alexeev from '../assets/speaker-photos/mara_alexeev.png';
+import arnold from '../assets/speaker-photos/taylor_arnold.jpeg';
+import atkinson from '../assets/speaker-photos/beth_atkinson.jpeg';
+import beasley from '../assets/speaker-photos/will_beasley.jpeg';
+import bouzoubaa from '../assets/speaker-photos/layla_bouzoubaa.jpeg';
+import cao from '../assets/speaker-photos/jie_cao.jpeg';
+import castro from '../assets/speaker-photos/victor_castro.jpeg';
+import chen from '../assets/speaker-photos/daniel_chen.jpeg';
+import gerke from '../assets/speaker-photos/travis_gerke.jpeg';
+import hanna from '../assets/speaker-photos/richard_hanna.jpeg';
+import higgins from '../assets/speaker-photos/peter_higgins.jpeg';
+import hill from '../assets/speaker-photos/alison_hill.jpeg';
+import huling from '../assets/speaker-photos/jared_huling.jpeg';
+import hvitfeldt from '../assets/speaker-photos/emil_hvitfeldt.png';
+import kadauke from '../assets/speaker-photos/stephan_kadauke.jpeg';
+import kane from '../assets/speaker-photos/michael_kane.png';
+import karim from '../assets/speaker-photos/ehsan_karim.jpeg';
+import keyes from '../assets/speaker-photos/timothy_keyes.png';
+import korszun from '../assets/speaker-photos/joe_korszun.jpeg';
+import laderas from '../assets/speaker-photos/ted_laderas.jpeg';
+import landau from '../assets/speaker-photos/will_landau.jpeg';
+import lewis from '../assets/speaker-photos/judith_lewis.jpeg';
+import lobato from '../assets/speaker-photos/robert_lobato.jpeg';
+import meyer from '../assets/speaker-photos/sean_meyer.jpeg';
+import mcguinness from '../assets/speaker-photos/luke_mcguinness.jpeg';
+import mclean from '../assets/speaker-photos/kenneth_mclean.jpeg';
+import miller from '../assets/speaker-photos/david_miller.jpeg';
+import mundo from '../assets/speaker-photos/ariel_mundo.jpeg';
+import obermeyer from '../assets/speaker-photos/ziad_obermeyer.jpeg';
+import panthagani from '../assets/speaker-photos/kristen_panthagani.png';
+import requena from '../assets/speaker-photos/francisco_requena.png';
+import rodziewicz from '../assets/speaker-photos/damian_rodziewicz.jpeg';
+import romanowska from '../assets/speaker-photos/julia_romanowska.jpeg';
+import schwager from '../assets/speaker-photos/steven_schwager.jpeg';
+import singh from '../assets/speaker-photos/karandeep_singh.jpeg';
+import soteriades from '../assets/speaker-photos/andreas_soteriades.jpeg';
+import south from '../assets/speaker-photos/andy_south.jpeg';
+import wiley from '../assets/speaker-photos/laura_wiley.jpeg';
+import zabor from '../assets/speaker-photos/emily_zabor.jpeg';
 export const SCHEDULES = [
 	{
 		day: 'Tuesday, August 24th',
@@ -9,17 +49,17 @@ export const SCHEDULES = [
 					{
 						name: 'Peter Higgins',
 						link: '',
-						imageUrl: '../assets/higgins-peter.jpeg'
+						imageUrl: higgins
 					},
 					{
 						name: 'Will Beasley',
 						link: '',
-						imageUrl: ''
+						imageUrl: beasley
 					},
 					{
 						name: 'Kenneth MacLean',
 						link: '',
-						imageUrl: ''
+						imageUrl: mclean
 					}
 				]
 			},
@@ -30,17 +70,17 @@ export const SCHEDULES = [
 					{
 						name: 'Ted Laderas',
 						link: '',
-						imageUrl: ''
+						imageUrl: laderas
 					},
 					{
 						name: 'Daniel Chen',
 						link: '',
-						imageUrl: ''
+						imageUrl: chen
 					},
 					{
 						name: 'Mara Alexeev',
 						link: '',
-						imageUrl: ''
+						imageUrl: alexeev
 					}
 				]
 			},
@@ -51,7 +91,7 @@ export const SCHEDULES = [
 					{
 						name: 'Ehsan Karim',
 						link: '',
-						imageUrl: ''
+						imageUrl: karim
 					}
 				]
 			}
@@ -67,7 +107,7 @@ export const SCHEDULES = [
 					{
 						name: 'Marynia Kolak',
 						link: '',
-						imageUrl: ''
+						imageUrl: null
 					}
 				]
 			},
@@ -78,7 +118,7 @@ export const SCHEDULES = [
 					{
 						name: 'Joe Korszun',
 						link: '',
-						imageUrl: ''
+						imageUrl: korszun
 					}
 				]
 			},
@@ -89,12 +129,12 @@ export const SCHEDULES = [
 					{
 						name: 'Alison Hill',
 						link: '',
-						imageUrl: ''
+						imageUrl: hill
 					},
 					{
 						name: 'Stephan Kadauke',
 						link: '',
-						imageUrl: ''
+						imageUrl: kadauke
 					}
 				]
 			}
@@ -110,7 +150,7 @@ export const SCHEDULES = [
 					{
 						name: 'Peter Higgins',
 						link: '',
-						imageUrl: '../assets/higgins-peter.jpeg'
+						imageUrl: higgins
 					}
 				]
 			},
@@ -121,18 +161,18 @@ export const SCHEDULES = [
 					{
 						name: 'Karandeep Singh',
 						link: '',
-						imageUrl: ''
+						imageUrl: singh
 					}
 				]
 			},
 			{
 				time: '12:17 - 12:30',
-				title: 'Break/ talk with keynote/panel',
+				title: 'Break/talk with keynote/panel',
 				speakers: [
 					{
 						name: 'Karandeep Singh',
 						link: '',
-						imageUrl: ''
+						imageUrl: singh
 					}
 				]
 			},
@@ -143,7 +183,7 @@ export const SCHEDULES = [
 					{
 						name: 'Julia Romanowska',
 						link: '',
-						imageUrl: ''
+						imageUrl: romanowska
 					}
 				]
 			},
@@ -154,7 +194,7 @@ export const SCHEDULES = [
 					{
 						name: 'Layla Bouzoubaa',
 						link: '',
-						imageUrl: ''
+						imageUrl: bouzoubaa
 					}
 				]
 			},
@@ -165,7 +205,7 @@ export const SCHEDULES = [
 					{
 						name: 'Ethan Heinzen',
 						link: '',
-						imageUrl: ''
+						imageUrl: null
 					}
 				]
 			},
@@ -176,7 +216,7 @@ export const SCHEDULES = [
 					{
 						name: 'R and Shiny Dashboards Facilitate Quality Improvement in Anesthesiology and Perioperative Care',
 						link: '',
-						imageUrl: ''
+						imageUrl: lobato
 					}
 				]
 			},
@@ -187,7 +227,7 @@ export const SCHEDULES = [
 					{
 						name: 'Building an Interpretable ML Model API for Interpretation of CNVs in Patients with Rare Diseases',
 						link: '',
-						imageUrl: ''
+						imageUrl: requena
 					}
 				]
 			},
@@ -198,7 +238,7 @@ export const SCHEDULES = [
 					{
 						name: '{tidyTOF}: Building Pipelines to Predict Patient Outcomes from Single-cell Data',
 						link: '',
-						imageUrl: ''
+						imageUrl: keyes
 					}
 				]
 			},
@@ -209,7 +249,7 @@ export const SCHEDULES = [
 					{
 						name: '{GENETEX}: A GENomics Report TEXt Mining R Package to Capture Real-world Clinico-genomic Data',
 						link: '',
-						imageUrl: ''
+						imageUrl: miller
 					}
 				]
 			},
@@ -220,7 +260,7 @@ export const SCHEDULES = [
 					{
 						name: 'Incorporating Risk-of-Bias Assessments into Evidence Syntheses with {robvis}',
 						link: '',
-						imageUrl: ''
+						imageUrl: mcguinness
 					}
 				]
 			},
@@ -231,7 +271,7 @@ export const SCHEDULES = [
 					{
 						name: 'Christian Röver',
 						link: '',
-						imageUrl: ''
+						imageUrl: null
 					}
 				]
 			},
@@ -242,7 +282,7 @@ export const SCHEDULES = [
 					{
 						name: 'Sean Meyer',
 						link: '',
-						imageUrl: ''
+						imageUrl: meyer
 					}
 				]
 			},
@@ -253,7 +293,7 @@ export const SCHEDULES = [
 					{
 						name: 'Beth Atkinson',
 						link: '',
-						imageUrl: ''
+						imageUrl: atkinson
 					}
 				]
 			},
@@ -264,7 +304,7 @@ export const SCHEDULES = [
 					{
 						name: 'Ariel Mundo',
 						link: '',
-						imageUrl: ''
+						imageUrl: mundo
 					}
 				]
 			},
@@ -275,7 +315,7 @@ export const SCHEDULES = [
 					{
 						name: 'Victor Castro',
 						link: '',
-						imageUrl: ''
+						imageUrl: castro
 					}
 				]
 			},
@@ -286,7 +326,7 @@ export const SCHEDULES = [
 					{
 						name: 'Jie Cao',
 						link: '',
-						imageUrl: ''
+						imageUrl: cao
 					}
 				]
 			},
@@ -297,7 +337,7 @@ export const SCHEDULES = [
 					{
 						name: 'Andreas Soteriades',
 						link: '',
-						imageUrl: ''
+						imageUrl: soteriades
 					}
 				]
 			},
@@ -308,7 +348,7 @@ export const SCHEDULES = [
 					{
 						name: 'Richard Hanna',
 						link: '',
-						imageUrl: ''
+						imageUrl: hanna
 					}
 				]
 			},
@@ -319,7 +359,7 @@ export const SCHEDULES = [
 					{
 						name: 'Michael Kane',
 						link: '',
-						imageUrl: ''
+						imageUrl: kane
 					}
 				]
 			},
@@ -330,7 +370,7 @@ export const SCHEDULES = [
 					{
 						name: 'Judith Lewis',
 						link: '',
-						imageUrl: ''
+						imageUrl: lewis
 					}
 				]
 			},
@@ -341,7 +381,7 @@ export const SCHEDULES = [
 					{
 						name: 'Laura Wiley',
 						link: '',
-						imageUrl: ''
+						imageUrl: wiley
 					}
 				]
 			},
@@ -352,7 +392,7 @@ export const SCHEDULES = [
 					{
 						name: 'Stephan Kadauke',
 						link: '',
-						imageUrl: ''
+						imageUrl: kadauke
 					}
 				]
 			}
@@ -368,7 +408,7 @@ export const SCHEDULES = [
 					{
 						name: 'Ziad Obermeyer',
 						link: '',
-						imageUrl: ''
+						imageUrl: obermeyer
 					}
 				]
 			},
@@ -377,14 +417,14 @@ export const SCHEDULES = [
 				title: 'Keynote Q&A vs panel',
 				speakers: [
 					{
-						name: 'Luke McGuiness',
+						name: 'Luke McGuinness',
 						link: '',
-						imageUrl: ''
+						imageUrl: mcguinness
 					},
 					{
 						name: 'Danielle Smalls',
 						link: '',
-						imageUrl: ''
+						imageUrl: null
 					}
 				]
 			},
@@ -395,7 +435,7 @@ export const SCHEDULES = [
 					{
 						name: 'Jie Cao',
 						link: '',
-						imageUrl: ''
+						imageUrl: cao
 					}
 				]
 			},
@@ -406,7 +446,7 @@ export const SCHEDULES = [
 					{
 						name: 'Peter Higgins',
 						link: '',
-						imageUrl: '../assets/higgins-peter.jpeg'
+						imageUrl: higgins
 					}
 				]
 			},
@@ -417,7 +457,7 @@ export const SCHEDULES = [
 					{
 						name: 'Travis Gerke',
 						link: '',
-						imageUrl: ''
+						imageUrl: gerke
 					}
 				]
 			},
@@ -428,7 +468,7 @@ export const SCHEDULES = [
 					{
 						name: 'Taylor Arnold',
 						link: '',
-						imageUrl: ''
+						imageUrl: arnold
 					}
 				]
 			},
@@ -439,7 +479,7 @@ export const SCHEDULES = [
 					{
 						name: 'Emily Zabor',
 						link: '',
-						imageUrl: ''
+						imageUrl: zabor
 					}
 				]
 			},
@@ -450,7 +490,7 @@ export const SCHEDULES = [
 					{
 						name: 'Jared Huling',
 						link: '',
-						imageUrl: ''
+						imageUrl: huling
 					}
 				]
 			},
@@ -461,7 +501,7 @@ export const SCHEDULES = [
 					{
 						name: 'Steven Schwager',
 						link: '',
-						imageUrl: ''
+						imageUrl: schwager
 					}
 				]
 			},
@@ -472,7 +512,7 @@ export const SCHEDULES = [
 					{
 						name: 'Andy South',
 						link: '',
-						imageUrl: ''
+						imageUrl: south
 					}
 				]
 			},
@@ -483,7 +523,7 @@ export const SCHEDULES = [
 					{
 						name: 'Julia Silge',
 						link: '',
-						imageUrl: ''
+						imageUrl: singh
 					}
 				]
 			},
@@ -494,7 +534,7 @@ export const SCHEDULES = [
 					{
 						name: 'Kristen Panthagani',
 						link: '',
-						imageUrl: ''
+						imageUrl: panthagani
 					}
 				]
 			},
@@ -505,7 +545,7 @@ export const SCHEDULES = [
 					{
 						name: 'Emil Hvitfeldt',
 						link: '',
-						imageUrl: ''
+						imageUrl: hvitfeldt
 					}
 				]
 			},
@@ -516,7 +556,7 @@ export const SCHEDULES = [
 					{
 						name: 'Damian Rodziewicz',
 						link: '',
-						imageUrl: ''
+						imageUrl: rodziewicz
 					}
 				]
 			},
@@ -527,7 +567,7 @@ export const SCHEDULES = [
 					{
 						name: 'Marcus Adams',
 						link: '',
-						imageUrl: ''
+						imageUrl: adams
 					}
 				]
 			},
@@ -538,7 +578,7 @@ export const SCHEDULES = [
 					{
 						name: 'Will Landau',
 						link: '',
-						imageUrl: ''
+						imageUrl: landau
 					}
 				]
 			},
@@ -549,7 +589,7 @@ export const SCHEDULES = [
 					{
 						name: 'Stephan Kadauke',
 						link: '',
-						imageUrl: ''
+						imageUrl: kadauke
 					}
 				]
 			}
