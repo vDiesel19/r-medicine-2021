@@ -158,4 +158,43 @@
             margin: 0 0 15px 0;
         }
     }
+    &__cta-link {
+        width: 270px;
+        margin: 50px auto 0;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        @include tablet {
+            width: 220px;
+        }
+        &:hover, 
+        &:focus {
+            .schedule__cta {
+                color: $teal;
+                background-color: #fff;
+            }
+        }
+    }
+    &__cta {
+        width: 100%;
+        padding: 25px 0;
+        display: block;
+        margin: 0 auto;
+        outline: 0;
+        border: none;
+        color: #fff;
+        border: 2px solid $teal;
+        background-color: $teal;
+        font-family: sans-serif;
+        font-size: 17px;
+        text-transform: uppercase;
+        cursor: pointer;
+        @include tablet {
+            padding: 15px 0;
+            font-size: 16px;
+        }
+        @include reader {
+            font-size: 12px;
+        }
+    }
 }

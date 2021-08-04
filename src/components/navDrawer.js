@@ -24,6 +24,9 @@ const NavDrawer = (props) => {
 						<Link className="drawer__link-level-1" to="/about/">About</Link>
 					</li>
 					<li>
+						<Link className="drawer__link-level-1" to="/schedule/">Schedule</Link>
+					</li>
+					<li>
 						<Link className="drawer__link-level-1" to="/code-of-conduct/">Code of Conduct</Link>
 					</li>
 					<li className="drawer__dropdown--wrapper">

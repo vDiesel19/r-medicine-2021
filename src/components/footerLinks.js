@@ -17,6 +17,9 @@ const FooterLinks = () => {
 						<Link to="/about/">About</Link>
 					</li>
 					<li>
+						<Link to="/schedule/">Schedule</Link>
+					</li>
+					<li>
 						<Link to="/code-of-conduct/">Code of Conduct</Link>
 					</li>
 				</ul>
