@@ -8,6 +8,14 @@
     margin: 10px auto;
     height: max-content;
     background-color:#8bd3d9;
+    &.break, 
+    &.bof {
+        background-color: #04848f;
+        .workshop__time,
+        .workshop__title {
+            color: #fff;
+        }
+    }
     @include reader {
         flex-direction: column;
         text-align: center;
@@ -39,7 +47,7 @@
         font-family: sans-serif;
         font-size: 18px;
         font-weight: 400;
-        margin: 0 0 15px;
+        margin: 0;
         @include reader {
             font-size: 16px;
         }
@@ -59,6 +67,7 @@
     }
     &__speakers {
         display: flex;
+        margin-top: 15px;
         @include reader {
             justify-content: center;
         }

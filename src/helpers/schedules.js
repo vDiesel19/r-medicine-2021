@@ -3,10 +3,13 @@ import alexeev from '../assets/speaker-photos/mara_alexeev.png';
 import arnold from '../assets/speaker-photos/taylor_arnold.jpeg';
 import atkinson from '../assets/speaker-photos/beth_atkinson.jpeg';
 import beasley from '../assets/speaker-photos/will_beasley.jpeg';
+import beeley from '../assets/speaker-photos/chris_beeley.jpeg';
 import bouzoubaa from '../assets/speaker-photos/layla_bouzoubaa.jpeg';
+import boyes from '../assets/speaker-photos/randall_boyes.jpeg';
 import cao from '../assets/speaker-photos/jie_cao.jpeg';
 import castro from '../assets/speaker-photos/victor_castro.jpeg';
 import chen from '../assets/speaker-photos/daniel_chen.jpeg';
+import duda from '../assets/speaker-photos/stephany_duda.jpeg';
 import gerke from '../assets/speaker-photos/travis_gerke.jpeg';
 import hanna from '../assets/speaker-photos/richard_hanna.jpeg';
 import higgins from '../assets/speaker-photos/peter_higgins.jpeg';
@@ -17,6 +20,7 @@ import kadauke from '../assets/speaker-photos/stephan_kadauke.jpeg';
 import kane from '../assets/speaker-photos/michael_kane.png';
 import karim from '../assets/speaker-photos/ehsan_karim.jpeg';
 import keyes from '../assets/speaker-photos/timothy_keyes.png';
+import kolak from '../assets/speaker-photos/marynia_kolak.jpeg';
 import korszun from '../assets/speaker-photos/joe_korszun.jpeg';
 import laderas from '../assets/speaker-photos/ted_laderas.jpeg';
 import landau from '../assets/speaker-photos/will_landau.jpeg';
@@ -33,6 +37,7 @@ import requena from '../assets/speaker-photos/francisco_requena.png';
 import rodziewicz from '../assets/speaker-photos/damian_rodziewicz.jpeg';
 import romanowska from '../assets/speaker-photos/julia_romanowska.jpeg';
 import schwager from '../assets/speaker-photos/steven_schwager.jpeg';
+import silge from '../assets/speaker-photos/julia_silge.jpeg';
 import singh from '../assets/speaker-photos/karandeep_singh.jpeg';
 import soteriades from '../assets/speaker-photos/andreas_soteriades.jpeg';
 import south from '../assets/speaker-photos/andy_south.jpeg';
@@ -40,11 +45,11 @@ import wiley from '../assets/speaker-photos/laura_wiley.jpeg';
 import zabor from '../assets/speaker-photos/emily_zabor.jpeg';
 export const SCHEDULES = [
 	{
-		day: 'Tuesday, August 24th',
+		day: 'Tuesday, August 24th | 11:00 - 18:00 EDT | Short Courses',
 		workshops: [
 			{
 				time: '11:00 - 14:00',
-				title: 'Secure Medical Data Collection: Best Practices with Excel, and Leveling Up to REDCap and collaboratoR',
+				title: 'Short Course: Secure Medical Data Collection: Best Practices with Excel, and Leveling Up to REDCap and collaboratoR',
 				speakers: [
 					{
 						name: 'Peter Higgins',
@@ -65,7 +70,7 @@ export const SCHEDULES = [
 			},
 			{
 				time: '15:00 - 18:00',
-				title: 'Introduction to R for Medical Data',
+				title: 'Short Course: Introduction to R for Medical Data',
 				speakers: [
 					{
 						name: 'Ted Laderas',
@@ -86,7 +91,7 @@ export const SCHEDULES = [
 			},
 			{
 				time: '15:00 - 18:00',
-				title: 'An Introductory R Guide for Targeted Maximum Likelihood Estimation in Medical Research',
+				title: 'Short Course: An Introductory R Guide for Targeted Maximum Likelihood Estimation in Medical Research',
 				speakers: [
 					{
 						name: 'Ehsan Karim',
@@ -98,22 +103,27 @@ export const SCHEDULES = [
 		]
 	},
 	{
-		day: 'Wednesday, August 25th',
+		day: 'Wednesday, August 25th | 11:00 - 18:30 EDT | Short Courses | Poster Session',
 		workshops: [
 			{
 				time: '11:00 - 14:00',
-				title: 'Mapping Spatial Health Data',
+				title: 'Short Course: Mapping Spatial Health Data',
 				speakers: [
 					{
 						name: 'Marynia Kolak',
 						link: '',
-						imageUrl: null
+						imageUrl: kolak
 					}
 				]
 			},
 			{
+				time: '14:10 - 15:20',
+				title: 'Poster Session',
+				speakers: []
+			},
+			{
 				time: '15:30 - 18:30',
-				title: 'From SAS to R',
+				title: 'Short Course: From SAS to R',
 				speakers: [
 					{
 						name: 'Joe Korszun',
@@ -124,7 +134,7 @@ export const SCHEDULES = [
 			},
 			{
 				time: '15:30 - 18:30',
-				title: 'R Markdown for Reproducible Research',
+				title: 'Short Course: R Markdown for Reproducible Research',
 				speakers: [
 					{
 						name: 'Alison Hill',
@@ -141,7 +151,7 @@ export const SCHEDULES = [
 		]
 	},
 	{
-		day: 'Thursday, August 26th',
+		day: 'Thursday, August 26th | 11:00 - 18:30 EDT | Short Courses | Poster Session',
 		workshops: [
 			{
 				time: '11:00 - 11:13',
@@ -156,7 +166,7 @@ export const SCHEDULES = [
 			},
 			{
 				time: '11:15 - 12:15',
-				title: 'Bringing Machine Learning Models to the Bedside at Scale',
+				title: 'Keynote Presentation: Bringing Machine Learning Models to the Bedside at Scale',
 				speakers: [
 					{
 						name: 'Karandeep Singh',
@@ -167,14 +177,8 @@ export const SCHEDULES = [
 			},
 			{
 				time: '12:17 - 12:30',
-				title: 'Break/talk with keynote/panel',
-				speakers: [
-					{
-						name: 'Karandeep Singh',
-						link: '',
-						imageUrl: singh
-					}
-				]
+				title: 'Break',
+				speakers: []
 			},
 			{
 				time: '12:32 - 12:42',
@@ -206,6 +210,16 @@ export const SCHEDULES = [
 						name: 'Ethan Heinzen',
 						link: '',
 						imageUrl: null
+					},
+					{
+						name: 'Beth Atkinson',
+						link: '',
+						imageUrl: atkinson
+					},
+					{
+						name: 'Jason Sinnwell',
+						link: '',
+						imageUrl: null
 					}
 				]
 			},
@@ -232,6 +246,11 @@ export const SCHEDULES = [
 				]
 			},
 			{
+				time: '13:41 - 14:11',
+				title: 'Birds of a Feather Sessions',
+				speakers: []
+			},
+			{
 				time: '14:11 - 14:31',
 				title: '{tidyTOF}: Building Pipelines to Predict Patient Outcomes from Single-cell Data',
 				speakers: [
@@ -250,6 +269,11 @@ export const SCHEDULES = [
 						name: 'David Miller',
 						link: '',
 						imageUrl: miller
+					},
+					{
+						name: 'Sophia Shalhout',
+						link: '',
+						imageUrl: null
 					}
 				]
 			},
@@ -261,6 +285,16 @@ export const SCHEDULES = [
 						name: 'Luke McGuinness',
 						link: '',
 						imageUrl: mcguinness
+					},
+					{
+						name: 'Randall Boyes',
+						link: '',
+						imageUrl: boyes
+					},
+					{
+						name: 'Alex Fowler',
+						link: '',
+						imageUrl: null
 					}
 				]
 			},
@@ -276,6 +310,11 @@ export const SCHEDULES = [
 				]
 			},
 			{
+				time: '15:29 - 15:44',
+				title: 'Break',
+				speakers: []
+			},
+			{
 				time: '15:46 - 15:56',
 				title: '{gpmodels}: A Grammar of Prediction Models',
 				speakers: [
@@ -283,6 +322,11 @@ export const SCHEDULES = [
 						name: 'Sean Meyer',
 						link: '',
 						imageUrl: meyer
+					},
+					{
+						name: 'Karandeep Singh',
+						link: '',
+						imageUrl: singh
 					}
 				]
 			},
@@ -316,6 +360,11 @@ export const SCHEDULES = [
 						name: 'Victor Castro',
 						link: '',
 						imageUrl: castro
+					},
+					{
+						name: 'Roy Perlis',
+						link: '',
+						imageUrl: null
 					}
 				]
 			},
@@ -327,8 +376,18 @@ export const SCHEDULES = [
 						name: 'Jie Cao',
 						link: '',
 						imageUrl: cao
+					},
+					{
+						name: 'Karandeep Singh',
+						link: '',
+						imageUrl: singh
 					}
 				]
+			},
+			{
+				time: '17:06 - 17:36',
+				title: 'Birds of a Feather Sessions',
+				speakers: []
 			},
 			{
 				time: '17:38 - 17:58',
@@ -338,6 +397,11 @@ export const SCHEDULES = [
 						name: 'Andreas Soteriades',
 						link: '',
 						imageUrl: soteriades
+					},
+					{
+						name: 'Chris Beeley',
+						link: '',
+						imageUrl: beeley
 					}
 				]
 			},
@@ -349,6 +413,11 @@ export const SCHEDULES = [
 						name: 'Richard Hanna',
 						link: '',
 						imageUrl: hanna
+					},
+					{
+						name: 'Stephan Kadauke',
+						link: '',
+						imageUrl: kadauke
 					}
 				]
 			},
@@ -371,6 +440,11 @@ export const SCHEDULES = [
 						name: 'Judith Lewis',
 						link: '',
 						imageUrl: lewis
+					},
+					{
+						name: 'Stephany Duda',
+						link: '',
+						imageUrl: duda
 					}
 				]
 			},
@@ -382,6 +456,11 @@ export const SCHEDULES = [
 						name: 'Laura Wiley',
 						link: '',
 						imageUrl: wiley
+					},
+					{
+						name: 'David Mayer',
+						link: '',
+						imageUrl: null
 					}
 				]
 			},
@@ -399,11 +478,11 @@ export const SCHEDULES = [
 		]
 	},
 	{
-		day: 'Friday, August 27th',
+		day: 'Friday, August 27th | 11:00 - 18:30 EDT | Short Courses | Poster Session',
 		workshops: [
 			{
 				time: '11:00 - 12:00',
-				title: 'Dissecting Algorithmic Bias',
+				title: 'Keynote Presentation: Dissecting Algorithmic Bias',
 				speakers: [
 					{
 						name: 'Ziad Obermeyer',
@@ -414,19 +493,8 @@ export const SCHEDULES = [
 			},
 			{
 				time: '12:00 - 12:20',
-				title: 'Keynote Q&A vs panel',
-				speakers: [
-					{
-						name: 'Luke McGuinness',
-						link: '',
-						imageUrl: mcguinness
-					},
-					{
-						name: 'Danielle Smalls',
-						link: '',
-						imageUrl: null
-					}
-				]
+				title: 'Break',
+				speakers: []
 			},
 			{
 				time: '12:22 - 12:42',
@@ -436,6 +504,11 @@ export const SCHEDULES = [
 						name: 'Jie Cao',
 						link: '',
 						imageUrl: cao
+					},
+					{
+						name: 'Karandeep Singh',
+						link: '',
+						imageUrl: singh
 					}
 				]
 			},
@@ -449,6 +522,11 @@ export const SCHEDULES = [
 						imageUrl: higgins
 					}
 				]
+			},
+			{
+				time: '13:06 - 13:21',
+				title: 'Break',
+				speakers: []
 			},
 			{
 				time: '13:23 - 13:43',
@@ -495,6 +573,11 @@ export const SCHEDULES = [
 				]
 			},
 			{
+				time: '14:41 - 15:11',
+				title: 'Birds of a Feather Sessions',
+				speakers: []
+			},
+			{
 				time: '15:13 - 15:33',
 				title: 'Graphical Displays in R for Clinical Trials',
 				speakers: [
@@ -523,7 +606,7 @@ export const SCHEDULES = [
 					{
 						name: 'Julia Silge',
 						link: '',
-						imageUrl: singh
+						imageUrl: silge
 					}
 				]
 			},
@@ -550,7 +633,12 @@ export const SCHEDULES = [
 				]
 			},
 			{
-				time: '16:50 - 16:52',
+				time: '16:33 - 16:48',
+				title: 'Break',
+				speakers: []
+			},
+			{
+				time: '16:50 - 17:00',
 				title: 'R Markdown and {officedown} to Automate Clinical Trial Reporting',
 				speakers: [
 					{
@@ -561,7 +649,7 @@ export const SCHEDULES = [
 				]
 			},
 			{
-				time: '16:54 - 17:14',
+				time: '17:02 - 17:22',
 				title: "Second Server to the Right and Straight On 'til Production: Deploying a GxP Shiny Application",
 				speakers: [
 					{
@@ -572,7 +660,7 @@ export const SCHEDULES = [
 				]
 			},
 			{
-				time: '17:14 - 17:24',
+				time: '17:22 - 17:42',
 				title: 'Target Markdown and {stantargets} for Bayesian model validation pipelines',
 				speakers: [
 					{
@@ -583,7 +671,7 @@ export const SCHEDULES = [
 				]
 			},
 			{
-				time: '17:26 - 17:36',
+				time: '17:44 - 17:54',
 				title: 'Closing Remarks for Day 2',
 				speakers: [
 					{
