@@ -151,7 +151,7 @@ export const SCHEDULES = [
 		]
 	},
 	{
-		day: 'Thursday, August 26th | 11:00 - 18:30 EDT | Short Courses | Poster Session',
+		day: 'Thursday, August 26th | 11:00 - 19:30 EDT',
 		workshops: [
 			{
 				time: '11:00 - 11:13',
@@ -423,7 +423,7 @@ export const SCHEDULES = [
 			},
 			{
 				time: '18:12 - 18:32',
-				title: 'Using Shiny to Visualize a Kidney Donor’s Personalized Long-Term Risk',
+				title: 'Collaborative, Reproducible Exploration of Clinical Trial Data',
 				speakers: [
 					{
 						name: 'Michael Kane',
@@ -478,7 +478,7 @@ export const SCHEDULES = [
 		]
 	},
 	{
-		day: 'Friday, August 27th | 11:00 - 18:30 EDT | Short Courses | Poster Session',
+		day: 'Friday, August 27th | 11:00 - 18:00 EDT',
 		workshops: [
 			{
 				time: '11:00 - 12:00',
