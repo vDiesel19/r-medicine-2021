@@ -26,9 +26,10 @@ import laderas from '../assets/speaker-photos/ted_laderas.jpeg';
 import landau from '../assets/speaker-photos/will_landau.jpeg';
 import lewis from '../assets/speaker-photos/judith_lewis.jpeg';
 import lobato from '../assets/speaker-photos/robert_lobato.jpeg';
-import meyer from '../assets/speaker-photos/sean_meyer.jpeg';
 import mcguinness from '../assets/speaker-photos/luke_mcguinness.jpeg';
 import mclean from '../assets/speaker-photos/kenneth_mclean.jpeg';
+import meyer from '../assets/speaker-photos/sean_meyer.jpeg';
+import miller_amanda from '../assets/speaker-photos/amanda_miller.jpeg';
 import miller from '../assets/speaker-photos/david_miller.jpeg';
 import mundo from '../assets/speaker-photos/ariel_mundo.jpeg';
 import obermeyer from '../assets/speaker-photos/ziad_obermeyer.jpeg';
@@ -65,6 +66,11 @@ export const SCHEDULES = [
 						name: 'Kenneth MacLean',
 						link: '',
 						imageUrl: mclean
+					},
+					{
+						name: 'Amanda Miller',
+						link: '',
+						imageUrl: miller_amanda
 					}
 				]
 			},
@@ -480,6 +486,17 @@ export const SCHEDULES = [
 	{
 		day: 'Friday, August 27th | 11:00 - 18:00 EDT',
 		workshops: [
+			{
+				time: '10:50 - 11:00',
+				title: 'Welcome to Day 2',
+				speakers: [
+					{
+						name: 'Peter Higgins',
+						link: '',
+						imageUrl: higgins
+					}
+				]
+			},
 			{
 				time: '11:00 - 12:00',
 				title: 'Keynote Presentation: Dissecting Algorithmic Bias',
