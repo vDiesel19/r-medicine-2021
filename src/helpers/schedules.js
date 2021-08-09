@@ -34,6 +34,7 @@ import miller from '../assets/speaker-photos/david_miller.jpeg';
 import mundo from '../assets/speaker-photos/ariel_mundo.jpeg';
 import obermeyer from '../assets/speaker-photos/ziad_obermeyer.jpeg';
 import panthagani from '../assets/speaker-photos/kristen_panthagani.png';
+import paykin from '../assets/speaker-photos/susan_paykin.jpg';
 import requena from '../assets/speaker-photos/francisco_requena.png';
 import rodziewicz from '../assets/speaker-photos/damian_rodziewicz.jpeg';
 import romanowska from '../assets/speaker-photos/julia_romanowska.jpeg';
@@ -119,6 +120,11 @@ export const SCHEDULES = [
 						name: 'Marynia Kolak',
 						link: '',
 						imageUrl: kolak
+					},
+					{
+						name: 'Susan Paykin',
+						link: '',
+						imageUrl: paykin
 					}
 				]
 			},
