@@ -43,6 +43,7 @@ import silge from '../assets/speaker-photos/julia_silge.jpeg';
 import singh from '../assets/speaker-photos/karandeep_singh.jpeg';
 import soteriades from '../assets/speaker-photos/andreas_soteriades.jpeg';
 import south from '../assets/speaker-photos/andy_south.jpeg';
+import villanueva from '../assets/speaker-photos/paul_villanueva.jpg';
 import wiley from '../assets/speaker-photos/laura_wiley.jpeg';
 import zabor from '../assets/speaker-photos/emily_zabor.jpeg';
 export const SCHEDULES = [
@@ -157,6 +158,11 @@ export const SCHEDULES = [
 						name: 'Stephan Kadauke',
 						link: '',
 						imageUrl: kadauke
+					},
+					{
+						name: 'Paul Villanueva',
+						link: '',
+						imageUrl: villanueva
 					}
 				]
 			}
@@ -403,7 +409,7 @@ export const SCHEDULES = [
 			},
 			{
 				time: '17:38 - 17:58',
-				title: 'Scaling Up Shiny for National Health Decisions',
+				title: 'Scaling Up and Deploying Shiny and Text Mining for National Health Decisions',
 				speakers: [
 					{
 						name: 'Andreas Soteriades',
@@ -490,7 +496,7 @@ export const SCHEDULES = [
 		]
 	},
 	{
-		day: 'Friday, August 27th | 11:00 - 18:00 EDT',
+		day: 'Friday, August 27th | 10:50 - 18:00 EDT',
 		workshops: [
 			{
 				time: '10:50 - 11:00',
