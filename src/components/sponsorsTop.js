@@ -1,5 +1,6 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby';
+import appsilon from '../assets/Appsilon_2020_RGB_svg-COLOR.svg';
 import chopLogo from '../assets/chop_web.svg';
 import procogiaLogo from '../assets/procogia.svg';
 import RConsortiumLogo from '../assets/RConsortium_Horizontal_Pantone.svg';
@@ -47,6 +48,11 @@ const SponsorsTop = () => {
 						<div className="sponsors__logo">
 							<a href="https://www.procogia.com/" target="_blank" rel="noreferrer">
 								<img src={procogiaLogo} alt="Procogia" />
+							</a>
+						</div>
+						<div className="sponsors__logo">
+							<a href="https://appsilon.com/" target="_blank" rel="noreferrer">
+								<img src={appsilon} alt="Appsilon" />
 							</a>
 						</div>
 					</div>
