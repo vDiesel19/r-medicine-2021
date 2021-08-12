@@ -12,6 +12,7 @@ import chen from '../assets/speaker-photos/daniel_chen.jpeg';
 import duda from '../assets/speaker-photos/stephany_duda.jpeg';
 import gerke from '../assets/speaker-photos/travis_gerke.jpeg';
 import hanna from '../assets/speaker-photos/richard_hanna.jpeg';
+import hannaFrank from '../assets/speaker-photos/hanna_frank.jpeg';
 import higgins from '../assets/speaker-photos/peter_higgins.jpeg';
 import hill from '../assets/speaker-photos/alison_hill.jpeg';
 import huling from '../assets/speaker-photos/jared_huling.jpeg';
@@ -105,13 +106,18 @@ export const SCHEDULES = [
 						name: 'Ehsan Karim',
 						link: '',
 						imageUrl: karim
+					},
+					{
+						name: 'Hanna Frank',
+						link: '',
+						imageUrl: hannaFrank
 					}
 				]
 			}
 		]
 	},
 	{
-		day: 'Wednesday, August 25th | 11:00 - 18:30 EDT | Short Courses | Poster Session',
+		day: 'Wednesday, August 25th | 11:00 - 19:00 EDT | Short Courses | Poster Session',
 		workshops: [
 			{
 				time: '11:00 - 14:00',
@@ -146,8 +152,8 @@ export const SCHEDULES = [
 				]
 			},
 			{
-				time: '15:30 - 18:30',
-				title: 'Short Course: R Markdown for Reproducible Research',
+				time: '15:30 - 19:00',
+				title: 'Short Course: Reproducible Research with R',
 				speakers: [
 					{
 						name: 'Alison Hill',
