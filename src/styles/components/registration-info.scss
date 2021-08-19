@@ -34,6 +34,7 @@
             font-weight: 600;
             font-size: 22px;
             line-height: 1.4;
+            margin: 0 auto;
             @include tablet {
                 font-size: 18px;
             }
@@ -79,7 +80,8 @@
     }
     &__tier-name, 
     &__tier-price, 
-    &__tier-description {
+    &__tier-description,
+    &__text {
         color: #474747;
         font-family: sans-serif;
         font-size: 18px;
@@ -109,6 +111,16 @@
         line-height: 1.5;
         @include tablet {
             width: 100%;
+        }
+    }
+    &__text {
+        width: 60%;
+        max-width: 650px;
+        margin: 5px auto 20px;
+        text-align: center;
+        @include reader {
+            width: 80%;
+            font-size: 16px;
         }
     }
     &__cta-link {

@@ -326,10 +326,10 @@ export const SCHEDULES = [
 			},
 			{
 				time: '15:07 - 15:27',
-				title: 'Bayesian Random-Effects Meta-analysis using {bayesmeta}',
+				title: 'Using Shiny to Visualize a Kidney Donor’s Personalized Long-Term Risk ',
 				speakers: [
 					{
-						name: 'Christian Röver',
+						name: 'Erika Helgelson',
 						link: '',
 						imageUrl: null
 					}
@@ -550,7 +550,7 @@ export const SCHEDULES = [
 				]
 			},
 			{
-				time: '12:44 - 13:04',
+				time: '12:44 - 12:54',
 				title: '{medicaldata} for Teaching #Rstats',
 				speakers: [
 					{
@@ -561,12 +561,12 @@ export const SCHEDULES = [
 				]
 			},
 			{
-				time: '13:06 - 13:21',
+				time: '12:56 - 13:11',
 				title: 'Break',
 				speakers: []
 			},
 			{
-				time: '13:23 - 13:43',
+				time: '13:13 - 13:33',
 				title: 'CONSORT Diagrams in R with {ggconsort}',
 				speakers: [
 					{
@@ -577,7 +577,7 @@ export const SCHEDULES = [
 				]
 			},
 			{
-				time: '13:45 - 13:55',
+				time: '13:35 - 13:45',
 				title: '{ctrialsgov}: Access, Visualization, and Discovery of the ClinicalTrials.gov Database',
 				speakers: [
 					{
@@ -588,7 +588,7 @@ export const SCHEDULES = [
 				]
 			},
 			{
-				time: '13:57 - 14:17',
+				time: '13:47 - 14:07',
 				title: 'Designing Early Phase Clinical Trials with {ppseq}',
 				speakers: [
 					{
@@ -599,7 +599,7 @@ export const SCHEDULES = [
 				]
 			},
 			{
-				time: '14:19 - 14:39',
+				time: '14:09 - 14:29',
 				title: 'Subgroup identification and precision medicine with the {personalized} R package',
 				speakers: [
 					{
@@ -610,12 +610,23 @@ export const SCHEDULES = [
 				]
 			},
 			{
-				time: '14:41 - 15:11',
+				time: '14:31 - 14:41',
+				title: 'You R What You Measure: Digital biomarkers for insights in personalized health',
+				speakers: [
+					{
+						name: 'Irene van den Broek',
+						link: '',
+						imageUrl: null
+					}
+				]
+			},
+			{
+				time: '14:41 - 15:01',
 				title: 'Birds of a Feather Sessions',
 				speakers: []
 			},
 			{
-				time: '15:13 - 15:33',
+				time: '15:03 - 15:23',
 				title: 'Graphical Displays in R for Clinical Trials',
 				speakers: [
 					{
@@ -626,7 +637,7 @@ export const SCHEDULES = [
 				]
 			},
 			{
-				time: '15:35 - 15:45',
+				time: '15:25 - 15:35',
 				title: 'Mapping African Health Data with {afrimapr} Package, Training & Community',
 				speakers: [
 					{
@@ -637,7 +648,7 @@ export const SCHEDULES = [
 				]
 			},
 			{
-				time: '15:47 - 16:07',
+				time: '15:37 - 15:57',
 				title: 'Data Visualization for Machine Learning Practitioners',
 				speakers: [
 					{
@@ -648,7 +659,7 @@ export const SCHEDULES = [
 				]
 			},
 			{
-				time: '16:09 - 16:19',
+				time: '15:59 - 16:09',
 				title: 'Animated Data Visualizations with {gganimate} for Science Communication during the Pandemic',
 				speakers: [
 					{
@@ -659,7 +670,7 @@ export const SCHEDULES = [
 				]
 			},
 			{
-				time: '16:21 - 16:31',
+				time: '16:11 - 16:21',
 				title: 'Creating and Styling PPTX Slides with {rmarkdown}',
 				speakers: [
 					{
@@ -670,12 +681,12 @@ export const SCHEDULES = [
 				]
 			},
 			{
-				time: '16:33 - 16:48',
+				time: '16:23 - 16:38',
 				title: 'Break',
 				speakers: []
 			},
 			{
-				time: '16:50 - 17:00',
+				time: '16:40 - 17:00',
 				title: 'R Markdown and {officedown} to Automate Clinical Trial Reporting',
 				speakers: [
 					{
