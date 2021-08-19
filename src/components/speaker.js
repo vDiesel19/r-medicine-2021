@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const Speaker = (props) => {
-    const { name, imageUrl } = props;
+    const { name, imageUrl, creditLogo } = props;
 
     return (
         <div className="speaker">
@@ -15,6 +15,11 @@ const Speaker = (props) => {
                 </div>
 			)}
             <p className="speaker__name">{name}</p>
+            {creditLogo ? (
+                <img className="speaker__credit-img" src={creditLogo} />
+                ) : (
+                ""
+            )}
         </div>
     );
 };
