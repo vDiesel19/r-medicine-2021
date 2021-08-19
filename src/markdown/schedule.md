@@ -13,7 +13,7 @@ schedules:
       date: 25th
       event_line_1: Short Courses
       events:
-        - Mapping Spatial Health Data <span>&mdash; <a href="https://spatial.uchicago.edu/directory/marynia-kolak-phd" target="_blank">Marynia Kolak</a></span>
+        - Mapping Spatial Health Data <span>&mdash; <a href="https://spatial.uchicago.edu/directory/marynia-kolak-phd" target="_blank">Marynia Kolak</a>, Susan Paykin</span>
         - Reproducible Research with R <span>&mdash; <a href="https://alison.rbind.io/" target="_blank">Alison Hill</a>, <a href="https://www.chop.edu/doctors/kadauke-stephan" target="_blank">Stephan Kadauke</a></span>
         - From SAS to R <span>&mdash; <a href="https://www.linkedin.com/in/joseph-korszun-6b8b6117b" target="_blank">Joe Korszun</a></span>
     - day_week: Thursday

@@ -98,11 +98,6 @@
                 margin: 0 auto 30px;
                 align-items: flex-start;
             }
-            &.sponsors__logos-container-last {
-                @include reader {
-                    margin: 0 auto;
-                }
-            }
         }
         .sponsors__logo {
             @include reader {

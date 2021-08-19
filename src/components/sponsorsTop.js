@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import appsilon from '../assets/Appsilon_2020_RGB_svg-COLOR.svg';
+import appsilon from '../assets/appsilon_logo.svg';
 import chopLogo from '../assets/chop_web.svg';
 import procogiaLogo from '../assets/procogia.svg';
 import RConsortiumLogo from '../assets/RConsortium_Horizontal_Pantone.svg';
@@ -39,7 +39,7 @@ const SponsorsTop = () => {
 							</a>
 						</div>
 					</div>
-					<div className="sponsors__logos-container sponsors__logos-container-last">
+					<div className="sponsors__logos-container">
 						<div className="sponsors__logo">
 							<a href="https://www.rstudio.com/" target="_blank" rel="noreferrer">
 								<img src={RStudioLogo} alt="R Studio" />

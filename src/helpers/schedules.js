@@ -47,6 +47,7 @@ import south from '../assets/speaker-photos/andy_south.jpeg';
 import villanueva from '../assets/speaker-photos/paul_villanueva.jpg';
 import wiley from '../assets/speaker-photos/laura_wiley.jpeg';
 import zabor from '../assets/speaker-photos/emily_zabor.jpeg';
+import cmeLogo from '../assets/cme-credits-graphic.png'
 export const SCHEDULES = [
 	{
 		day: 'Tuesday, August 24th | 11:00 - 18:00 EDT | Short Courses',
@@ -126,7 +127,8 @@ export const SCHEDULES = [
 					{
 						name: 'Marynia Kolak',
 						link: '',
-						imageUrl: kolak
+						imageUrl: kolak,
+						creditLogo: cmeLogo,
 					},
 					{
 						name: 'Susan Paykin',

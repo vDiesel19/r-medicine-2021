@@ -2,7 +2,7 @@ import React from 'react';
 import Speaker from '../components/speaker';
 
 const Workshop = (props) => {
-    const { time, title, speakers } = props;
+    const { time, title, creditLogo, speakers } = props;
 
     return (
         <div className={`workshop${title == "Break" ? " break" : ""}${title == "Birds of a Feather Sessions" ? " bof" : ""}`}>
@@ -18,6 +18,7 @@ const Workshop = (props) => {
                                 <Speaker
                                     name={speaker.name}
                                     imageUrl={speaker.imageUrl}
+                                    creditLogo={speaker.creditLogo}
                                 />
                             );
                         })}
