@@ -329,7 +329,7 @@ export const SCHEDULES = [
 				title: 'Using Shiny to Visualize a Kidney Donor’s Personalized Long-Term Risk ',
 				speakers: [
 					{
-						name: 'Erika Helgelson',
+						name: 'Erika Helgeson',
 						link: '',
 						imageUrl: null
 					}
