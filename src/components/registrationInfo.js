@@ -49,6 +49,7 @@ const RegistrationInfo = () => {
 						})}
 						</div>
 						<p className="registration__subheader subheader__bottom">{data.markdownRemark.frontmatter.text_section_3}</p>
+						<p className="registration__text">The speaker sessions will be recorded and viewable for registrants shortly after the end of each talk.</p>
 						<a className="registration__cta-link" href="https://www.cvent.com/d/gjq6c5/4W?ct=50221cf5-5496-4c34-9ec0-3b52b1bf1204" target="_blank" rel="noreferrer">
 							<button className="registration__cta" type="text">
 								Register
