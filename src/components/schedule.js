@@ -31,7 +31,7 @@ const Schedule = () => {
 				<div className="schedule">
 					<p className="schedule__subheader">{data.markdownRemark.frontmatter.subheader}</p>
 					<div className="schedule__container">
-						{data.markdownRemark.frontmatter.schedules.map(schedule => {
+						{data.markdownRemark.frontmatter.schedules.map((schedule, index) => {
 							return (
 								<div className="schedule__content" onClick={(e) => toggleSchedule(e)} role="button" tabIndex="0" key={schedule.day_week}>
 									<div className="schedule__day-of-week">
@@ -41,7 +41,7 @@ const Schedule = () => {
 											<img src={arrow} alt="" />
 										</button>
 									</div>
-									<div className="schedule__events">
+									<div className={`schedule__events events-${index}`}>
 										<p className="schedule__day">{schedule.date}</p>
 										<ul>
 											<li className="schedule__event-header">{schedule.event_line_1}</li>
