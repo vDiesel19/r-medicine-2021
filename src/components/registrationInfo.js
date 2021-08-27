@@ -55,12 +55,6 @@ const RegistrationInfo = () => {
 								Register
 							</button>
 						</a>
-						<p className="registration__subheader subheader__bottom subheader__last">{data.markdownRemark.frontmatter.text_section_4}</p>
-						<a className="registration__cta-link" href="https://www.r-consortium.org/r-medicine-diversity-equity-inclusion-scholarship" target="_blank" rel="noreferrer">
-							<button className="registration__cta" type="text">
-								Apply
-							</button>
-						</a>
 					</div>
 				</div>
 		  )}

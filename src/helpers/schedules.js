@@ -6,10 +6,12 @@ import beasley from '../assets/speaker-photos/will_beasley.jpeg';
 import beeley from '../assets/speaker-photos/chris_beeley.jpeg';
 import bouzoubaa from '../assets/speaker-photos/layla_bouzoubaa.jpeg';
 import boyes from '../assets/speaker-photos/randall_boyes.jpeg';
+import broek from '../assets/speaker-photos/irene_van_den_broek.jpg';
 import cao from '../assets/speaker-photos/jie_cao.jpeg';
 import castro from '../assets/speaker-photos/victor_castro.jpeg';
 import chen from '../assets/speaker-photos/daniel_chen.jpeg';
 import duda from '../assets/speaker-photos/stephany_duda.jpeg';
+import fowler from '../assets/speaker-photos/alexander_fowler.jpg';
 import gerke from '../assets/speaker-photos/travis_gerke.jpeg';
 import hanna from '../assets/speaker-photos/richard_hanna.jpeg';
 import hannaFrank from '../assets/speaker-photos/hanna_frank.jpeg';
@@ -40,6 +42,7 @@ import requena from '../assets/speaker-photos/francisco_requena.png';
 import rodziewicz from '../assets/speaker-photos/damian_rodziewicz.jpeg';
 import romanowska from '../assets/speaker-photos/julia_romanowska.jpeg';
 import schwager from '../assets/speaker-photos/steven_schwager.jpeg';
+import shalout from '../assets/speaker-photos/sophia_shalout.jpg';
 import silge from '../assets/speaker-photos/julia_silge.jpeg';
 import singh from '../assets/speaker-photos/karandeep_singh.jpeg';
 import soteriades from '../assets/speaker-photos/andreas_soteriades.jpeg';
@@ -278,7 +281,7 @@ export const SCHEDULES = [
 			},
 			{
 				time: '14:11 - 14:31',
-				title: '{tidyTOF}: Building Pipelines to Predict Patient Outcomes from Single-cell Data',
+				title: '{tidytof}: Predicting Patient Outcomes from Single-cell Data using Tidy Data Principles',
 				speakers: [
 					{
 						name: 'Timothy Keyes',
@@ -299,7 +302,7 @@ export const SCHEDULES = [
 					{
 						name: 'Sophia Shalhout',
 						link: '',
-						imageUrl: null
+						imageUrl: shalout
 					}
 				]
 			},
@@ -320,16 +323,16 @@ export const SCHEDULES = [
 					{
 						name: 'Alex Fowler',
 						link: '',
-						imageUrl: null
+						imageUrl: fowler
 					}
 				]
 			},
 			{
 				time: '15:07 - 15:27',
-				title: 'Using Shiny to Visualize a Kidney Donor’s Personalized Long-Term Risk ',
+				title: 'Bayesian Random-Effects Meta-analysis using {bayesmeta}',
 				speakers: [
 					{
-						name: 'Erika Helgeson',
+						name: 'Christian Röver',
 						link: '',
 						imageUrl: null
 					}
@@ -358,7 +361,7 @@ export const SCHEDULES = [
 			},
 			{
 				time: '15:58 - 16:18',
-				title: 'Multistate data using the {survival} package',
+				title: 'Multistate Data Using the {survival} Package',
 				speakers: [
 					{
 						name: 'Beth Atkinson',
@@ -600,7 +603,7 @@ export const SCHEDULES = [
 			},
 			{
 				time: '14:09 - 14:29',
-				title: 'Subgroup identification and precision medicine with the {personalized} R package',
+				title: 'Subgroup Identification and Precision Medicine with the {personalized} R Package',
 				speakers: [
 					{
 						name: 'Jared Huling',
@@ -611,12 +614,12 @@ export const SCHEDULES = [
 			},
 			{
 				time: '14:31 - 14:41',
-				title: 'You R What You Measure: Digital biomarkers for insights in personalized health',
+				title: 'You R What You Measure: Digital Biomarkers for Insights in Personalized Health',
 				speakers: [
 					{
 						name: 'Irene van den Broek',
 						link: '',
-						imageUrl: null
+						imageUrl: broek
 					}
 				]
 			},
