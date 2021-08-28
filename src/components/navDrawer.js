@@ -15,9 +15,6 @@ const NavDrawer = (props) => {
 			<div className="drawer__content">
 				<ul className="drawer__link-list">
 					<li>
-						<a href="https://www.cvent.com/d/gjq6c5/4W?ct=50221cf5-5496-4c34-9ec0-3b52b1bf1204" target="_blank" rel="noreferrer">Register</a>
-					</li>
-					<li>
 						<Link className="drawer__link-level-1" to="/virtual-speaker-guide">Speakers</Link>
 					</li>
 					<li>
