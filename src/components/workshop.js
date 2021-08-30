@@ -2,7 +2,7 @@ import React from 'react';
 import Speaker from '../components/speaker';
 
 const Workshop = (props) => {
-    const { time, title, creditLogo, speakers } = props;
+    const { time, title, videoUrl, speakers } = props;
 
     return (
         <div className={`workshop${title == "Break" ? " break" : ""}${title == "Birds of a Feather Sessions" ? " bof" : ""}`}>
@@ -10,7 +10,11 @@ const Workshop = (props) => {
                 <span className="workshop__time">{time}</span>
             </div>
             <div className="workshop__content">
-                <h3 className="workshop__title">{title}</h3>
+                {videoUrl ? (
+                    <h3 className="workshop__title"><a href={videoUrl} target="_blank">{title}</a></h3>
+                    ) : (
+                    <h3 className="workshop__title">{title}</h3>    
+                )}
                 {speakers.length ? (
                     <div className="workshop__speakers">
                         {speakers.map(speaker => {
