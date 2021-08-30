@@ -57,7 +57,8 @@ export const SCHEDULES = [
 		workshops: [
 			{
 				time: '11:00 - 14:00',
-				title: 'Short Course: Secure Medical Data Collection: Best Practices with Excel, and Leveling Up to REDCap and collaboratoR',
+				title: 'Short Course: Secure Medical Data Collection: Best Practices with Excel, and Leveling Up to REDCap and CollaboratoR',
+				videoUrl: 'https://www.youtube.com/watch?v=sM9GEAm6Uew&list=PL4IzsxWztPdmHxCpS_c2l_jbMfrywWciZ',
 				speakers: [
 					{
 						name: 'Peter Higgins',
@@ -84,6 +85,7 @@ export const SCHEDULES = [
 			{
 				time: '15:00 - 18:00',
 				title: 'Short Course: Introduction to R for Medical Data',
+				videoUrl: 'https://www.youtube.com/watch?v=Rji_FKrTkvs&list=PL4IzsxWztPdmHxCpS_c2l_jbMfrywWciZ&index=2',
 				speakers: [
 					{
 						name: 'Ted Laderas',
@@ -126,6 +128,7 @@ export const SCHEDULES = [
 			{
 				time: '11:00 - 14:00',
 				title: 'Short Course: Mapping Spatial Health Data',
+				videoUrl: 'https://www.youtube.com/watch?v=-HvRISFkQZQ&list=PL4IzsxWztPdmHxCpS_c2l_jbMfrywWciZ&index=4',
 				speakers: [
 					{
 						name: 'Marynia Kolak',
@@ -143,11 +146,13 @@ export const SCHEDULES = [
 			{
 				time: '14:10 - 15:20',
 				title: 'Poster Session',
+				videoUrl: 'https://spatial.chat/s/R-Medicine2021?room=231308',
 				speakers: []
 			},
 			{
 				time: '15:30 - 18:30',
 				title: 'Short Course: From SAS to R',
+				videoUrl: 'https://www.youtube.com/watch?v=8_5n_yHufrA&list=PL4IzsxWztPdmHxCpS_c2l_jbMfrywWciZ&index=5',
 				speakers: [
 					{
 						name: 'Joe Korszun',
@@ -159,6 +164,7 @@ export const SCHEDULES = [
 			{
 				time: '15:30 - 19:00',
 				title: 'Short Course: Reproducible Research with R',
+				videoUrl: 'https://www.youtube.com/watch?v=mg95lLyCpQA&list=PL4IzsxWztPdmHxCpS_c2l_jbMfrywWciZ&index=6',
 				speakers: [
 					{
 						name: 'Alison Hill',

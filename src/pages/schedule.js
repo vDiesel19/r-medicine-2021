@@ -20,6 +20,7 @@ const SchedulePage = () => {
 											<Workshop
 												time={workshop.time}
 												title={workshop.title}
+												videoUrl={workshop.videoUrl}
 												speakers={workshop.speakers}
 											/>
 										)

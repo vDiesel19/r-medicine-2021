@@ -64,6 +64,9 @@
         @include reader {
             width: 100%;
         }
+        a {
+            color: #000;
+        }
     }
     &__speakers {
         display: flex;
