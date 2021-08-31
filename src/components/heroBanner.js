@@ -17,13 +17,14 @@ const HeroBanner = () => {
 						}
 					}
 				}
-		  `}
+		  `} 
 		  render={data => (
 				<div className="hero-banner">
 					<div className="hero-banner__wrapper">
 						<div className="hero-banner__content">
 							<h1 className="hero-banner__header">{data.markdownRemark.frontmatter.heroheader_line_1}<br /><span>{data.markdownRemark.frontmatter.heroheader_line_2}</span></h1>
 							<p className="hero-banner__subheader">{data.markdownRemark.frontmatter.herosubheader}</p>
+							<p className="hero-banner__text"><Link to="/schedule/">View Schedule and Recordings</Link></p>
 							<p className="hero-banner__text"><a href="https://spatial.chat/s/R-Medicine2021?room=231308" target="_blank">{data.markdownRemark.frontmatter.herotext}</a></p>
 						</div>
 					</div>

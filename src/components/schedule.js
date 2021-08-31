@@ -15,7 +15,6 @@ const Schedule = () => {
 				query ScheduleQuery {
 					markdownRemark(frontmatter: {id: {eq: "schedule-glance"}}) {
 						frontmatter {
-							subheader
 							schedules {
 								day_week
 								date
@@ -29,7 +28,6 @@ const Schedule = () => {
 		  	`}
 		  	render={data => (
 				<div className="schedule">
-					<p className="schedule__subheader">{data.markdownRemark.frontmatter.subheader}</p>
 					<div className="schedule__container">
 						{data.markdownRemark.frontmatter.schedules.map((schedule, index) => {
 							return (

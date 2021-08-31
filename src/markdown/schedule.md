@@ -1,6 +1,5 @@
 ---
 id: "schedule-glance"
-subheader: Sessions will run from approximately 11 AM EDT - 7 PM EDT. Sign-ups for short courses will be sent to registered attendees about 2 weeks before the conference.
 schedules:
     - day_week: Tuesday
       date: 24th
