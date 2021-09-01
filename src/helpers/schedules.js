@@ -700,6 +700,7 @@ export const SCHEDULES = [
 			{
 				time: '15:59 - 16:09',
 				title: 'Animated Data Visualizations with {gganimate} for Science Communication during the Pandemic',
+				videoUrl: 'https://www.youtube.com/watch?v=ArB6y1i1gOs',
 				speakers: [
 					{
 						name: 'Kristen Panthagani',
